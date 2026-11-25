@@ -39,6 +39,16 @@ python -m http.server 8080 --directory <widget-dir>
 4. Check the file still parses: `node -e "JSON.parse(require('fs').readFileSync('data/printer-items.json','utf8'))"`
 5. Reload the preview, or repackage and reinstall in iCUE.
 
+## Screenshots
+
+Map tab at 2560x720, 1280x720 and 720x2560:
+
+![Map 2560x720](docs/screenshots/map-2560x720.png)
+![Map 1280x720](docs/screenshots/map-1280x720.png)
+![Map 720x2560](docs/screenshots/map-720x2560.png)
+
+Regenerate all nine tab/viewport shots with `npx --yes -p playwright node tools/screenshots.mjs` (see `tools/screenshots.mjs`).
+
 ## Data sources and Credits
 
 Credits:
