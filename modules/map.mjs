@@ -38,21 +38,49 @@ export async function init(panelEl) {
   side.append(banner, legendEl);
   panelEl.append(viewport, side);
 
-  const map = L.map(viewport, { crs: L.CRS.Simple, minZoom: -2, maxZoom: 2, zoomSnap: 0.25, attributionControl: false });
+  const map = L.map(viewport, { crs: L.CRS.Simple, minZoom: -3, maxZoom: 2, zoomSnap: 0.25, attributionControl: false, maxBounds: BOUNDS, maxBoundsViscosity: 1 });
   L.control.attribution({ prefix: false }).addAttribution(ATTRIBUTION).addTo(map);
   let pinBounds = null, touched = false;
-  const refit = () => {
-    if (touched) return;
-    const b = pinBounds ? pinBounds.pad(0.18) : L.latLngBounds(BOUNDS);
-    map._refitting = true;
-    map.fitBounds(b.intersects(BOUNDS) ? b : BOUNDS, { animate: false });
-    map._refitting = false;
+  // Cover: smallest zoom at which the image still fills the whole viewport.
+  const coverZoom = () => {
+    const sz = map.getSize();
+    if (!sz.x || !sz.y) return map.getMinZoom();
+    const z = Math.log2(Math.max(sz.x / BOUNDS[1][1], sz.y / BOUNDS[1][0]));
+    return Math.ceil(z * 4 - 1e-6) / 4;
   };
-  map.fitBounds(BOUNDS);
-  map.on("dragstart zoomstart", (e) => { if (!map._refitting) touched = true; });
-  if (typeof ResizeObserver !== "undefined") {
-    new ResizeObserver(() => { map.invalidateSize(); refit(); }).observe(viewport);
-  }
+  const clampCentre = (c, z) => {
+    const sz = map.getSize();
+    const halfLat = sz.y / 2 / Math.pow(2, z), halfLng = sz.x / 2 / Math.pow(2, z);
+    return L.latLng(
+      Math.min(Math.max(c.lat, halfLat), BOUNDS[1][0] - halfLat),
+      Math.min(Math.max(c.lng, halfLng), BOUNDS[1][1] - halfLng));
+  };
+  const centroid = () => {
+    if (!pinBounds) return L.latLngBounds(BOUNDS).getCenter();
+    return pinBounds.getCenter();
+  };
+  const applyCover = (reset) => {
+    map.invalidateSize({ animate: false });
+    const min = coverZoom();
+    map.setMinZoom(min);
+    if (reset) {
+      const z = Math.max(min, pinBounds ? map.getBoundsZoom(pinBounds.pad(0.18), false) : min);
+      map._refitting = true;
+      map.setView(clampCentre(centroid(), z), z, { animate: false });
+      map._refitting = false;
+    } else {
+      if (map.getZoom() < min) map.setZoom(min, { animate: false });
+      map.panInsideBounds(BOUNDS, { animate: false });
+    }
+  };
+  const refit = () => applyCover(!touched);
+  map.setView(L.latLngBounds(BOUNDS).getCenter(), 0, { animate: false });
+  applyCover(true);
+  map.on("dragstart zoomstart", () => { if (!map._refitting) touched = true; });
+  if (typeof ResizeObserver !== "undefined") new ResizeObserver(refit).observe(viewport);
+  window.addEventListener("resize", refit);
+  window.addEventListener("orientationchange", refit);
+  window.__fobMap = map;
 
   // Base image with 8 s timeout and error fallback to the local grid.
   let settled = false;
