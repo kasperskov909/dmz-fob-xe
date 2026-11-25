@@ -38,49 +38,62 @@ export async function init(panelEl) {
   side.append(banner, legendEl);
   panelEl.append(viewport, side);
 
-  const map = L.map(viewport, { crs: L.CRS.Simple, minZoom: -3, maxZoom: 2, zoomSnap: 0.25, attributionControl: false, maxBounds: BOUNDS, maxBoundsViscosity: 1 });
+  const map = L.map(viewport, { crs: L.CRS.Simple, minZoom: -3, maxZoom: 2, zoomSnap: 0.25, attributionControl: false, trackResize: false, maxBounds: BOUNDS, maxBoundsViscosity: 1 });
   L.control.attribution({ prefix: false }).addAttribution(ATTRIBUTION).addTo(map);
-  let pinBounds = null, touched = false;
-  // Cover: smallest zoom at which the image still fills the whole viewport.
+  let pinBounds = null, touched = false, refitting = false;
+  const OVERSCAN = 3; // px of image kept beyond the viewport on every side
+  let inset = L.latLngBounds(BOUNDS);
+  const FREE = L.latLngBounds([-1e7, -1e7], [1e7, 1e7]);
+  // Cover: smallest zoom at which the image (minus overscan) still fills the whole viewport.
   const coverZoom = () => {
     const sz = map.getSize();
     if (!sz.x || !sz.y) return map.getMinZoom();
-    const z = Math.log2(Math.max(sz.x / BOUNDS[1][1], sz.y / BOUNDS[1][0]));
+    const z = Math.log2(Math.max((sz.x + 2 * OVERSCAN) / BOUNDS[1][1], (sz.y + 2 * OVERSCAN) / BOUNDS[1][0]));
     return Math.ceil(z * 4 - 1e-6) / 4;
   };
   const clampCentre = (c, z) => {
     const sz = map.getSize();
     const halfLat = sz.y / 2 / Math.pow(2, z), halfLng = sz.x / 2 / Math.pow(2, z);
+    const sw = inset.getSouthWest(), ne = inset.getNorthEast();
     return L.latLng(
-      Math.min(Math.max(c.lat, halfLat), BOUNDS[1][0] - halfLat),
-      Math.min(Math.max(c.lng, halfLng), BOUNDS[1][1] - halfLng));
+      Math.min(Math.max(c.lat, sw.lat + halfLat), ne.lat - halfLat),
+      Math.min(Math.max(c.lng, sw.lng + halfLng), ne.lng - halfLng));
   };
-  const centroid = () => {
-    if (!pinBounds) return L.latLngBounds(BOUNDS).getCenter();
-    return pinBounds.getCenter();
-  };
+  const centroid = () => (pinBounds && pinBounds.isValid() ? pinBounds : L.latLngBounds(BOUNDS)).getCenter();
   const applyCover = (reset) => {
-    map.invalidateSize({ animate: false });
-    const min = coverZoom();
-    map.setMinZoom(min);
-    if (reset) {
-      const z = Math.max(min, pinBounds ? map.getBoundsZoom(pinBounds.pad(0.18), false) : min);
-      map._refitting = true;
-      map.setView(clampCentre(centroid(), z), z, { animate: false });
-      map._refitting = false;
-    } else {
-      if (map.getZoom() < min) map.setZoom(min, { animate: false });
-      map.panInsideBounds(BOUNDS, { animate: false });
-    }
+    refitting = true;
+    try {
+      // Leaflet's own moveend bounds enforcement animates; suspend it while we position explicitly.
+      map.options.maxBounds = FREE;
+      map.stop();
+      map.invalidateSize({ animate: false });
+      const min = coverZoom();
+      map.options.minZoom = min;
+      const d = OVERSCAN / Math.pow(2, min);
+      inset = L.latLngBounds([d, d], [BOUNDS[1][0] - d, BOUNDS[1][1] - d]);
+      if (reset) {
+        const fit = pinBounds && pinBounds.isValid() ? map.getBoundsZoom(pinBounds.pad(0.18), false) : min;
+        const z = Math.min(map.getMaxZoom(), Math.max(min, fit));
+        map.setView(clampCentre(centroid(), z), z, { animate: false });
+      } else {
+        if (map.getZoom() < min) map.setZoom(min, { animate: false });
+        map.panInsideBounds(inset, { animate: false });
+      }
+    } finally { map.options.maxBounds = inset; refitting = false; }
   };
   const refit = () => applyCover(!touched);
+  let pending = 0;
+  const scheduleRefit = () => {
+    if (pending) return;
+    pending = requestAnimationFrame(() => { pending = 0; refit(); });
+  };
   map.setView(L.latLngBounds(BOUNDS).getCenter(), 0, { animate: false });
   applyCover(true);
-  map.on("dragstart zoomstart", () => { if (!map._refitting) touched = true; });
-  if (typeof ResizeObserver !== "undefined") new ResizeObserver(refit).observe(viewport);
-  window.addEventListener("resize", refit);
-  window.addEventListener("orientationchange", refit);
-  window.__fobMap = map;
+  map.on("dragstart zoomstart", () => { if (!refitting) touched = true; });
+  if (typeof ResizeObserver !== "undefined") new ResizeObserver(scheduleRefit).observe(viewport);
+  else window.addEventListener("resize", scheduleRefit);
+  window.addEventListener("orientationchange", scheduleRefit);
+  if (/[?&]debug(&|$|=)/.test(location.search)) window.__fobMap = map;
 
   // Base image with 8 s timeout and error fallback to the local grid.
   let settled = false;
