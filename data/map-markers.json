@@ -1,6 +1,6 @@
 {
  "_meta": {
-  "keys": "Key pin positions (category key) were taken from codcentral.net/blog/mw4-dmz-map on 2026-11-25. Names are our own. Other pins are authored by the FOB widget authors.",
+  "keys": "Key pins, names, rarity, verified flag and descriptions were taken from codcentral.net/blog/mw4-dmz-map on 2026-11-25 with the site owner's clearance pending. Pin colour is the site's per-rarity colour (see rarityColours). Other pins are authored by the FOB widget authors.",
   "coordinates": "x,y are percent of the 2880x2700 map image from the left and top edges."
  },
  "markers": [
@@ -151,626 +151,1024 @@
   {
    "id": "k01",
    "category": "key",
-   "name": "Key B3 (1)",
+   "name": "Kang's Arms Incinerator",
    "grid": "B3",
    "x": 20.556,
-   "y": 33.667
+   "y": 33.667,
+   "rarity": "Legendary",
+   "verified": true,
+   "info": "Kang's Arms Incinerator, inside The Citadel of the 14th Political Prison. Through the main entrance and up to floor 2. Behind the door is an incinerator hall with 11 containers, including the LT crate.",
+   "detail": "Key: drops from the Warden, Kang. Door found and opened in our own run.",
+   "colour": "#f5a623"
   },
   {
    "id": "k02",
    "category": "key",
-   "name": "Key B3 (2)",
+   "name": "The Citadel South Wing",
    "grid": "B3",
    "x": 19.583,
-   "y": 35.963
+   "y": 35.963,
+   "rarity": "Uncommon",
+   "verified": false,
+   "info": "Opens the exterior door of the south wing of The Citadel, the Y-shaped fort in the middle of the prison. The cell doors inside have their own keypad puzzle.",
+   "detail": "Key: field loot. Door and prompt confirmed on video (Mr ZEUS OK).",
+   "colour": "#5fd37a"
   },
   {
    "id": "k03",
    "category": "key",
-   "name": "Key B3 (3)",
+   "name": "South Block Armory",
    "grid": "B3",
    "x": 20.625,
-   "y": 36.222
+   "y": 36.222,
+   "rarity": "Unknown",
+   "verified": false,
+   "info": "The armory in the south arm of The Citadel: a blue steel door behind a barred gate, through the door marked 01 / Armory and an office with a flag.",
+   "detail": "Rarity not read yet. Door and prompt confirmed on two videos.",
+   "colour": "#9aa3ab"
   },
   {
    "id": "k04",
    "category": "key",
-   "name": "Key B3 (4)",
+   "name": "The Citadel Main Control Room",
    "grid": "B3",
    "x": 21.146,
-   "y": 34.667
+   "y": 34.667,
+   "rarity": "Unknown",
+   "verified": false,
+   "info": "The control room on the first floor in the middle of The Citadel, a rust-brown door with an Officers Only sign.",
+   "detail": "Rarity not read yet. Door and prompt confirmed on two videos.",
+   "colour": "#9aa3ab"
   },
   {
    "id": "k05",
    "category": "key",
-   "name": "Key B3 (5)",
+   "name": "The Citadel Secondary Control Room",
    "grid": "B3",
    "x": 20.833,
-   "y": 34.556
+   "y": 34.556,
+   "rarity": "Unknown",
+   "verified": false,
+   "info": "The second control room, one floor up in the middle of The Citadel, a dark steel door past a hall with a large portrait.",
+   "detail": "Rarity not read yet. Door and prompt confirmed on video.",
+   "colour": "#9aa3ab"
   },
   {
    "id": "k06",
    "category": "key",
-   "name": "Key B5 (1)",
+   "name": "Commandant Office",
    "grid": "B5",
    "x": 15.972,
-   "y": 58.704
+   "y": 58.704,
+   "rarity": "Epic",
+   "verified": true,
+   "info": "Opens the commandant's office on the second floor of Admin Complex No. 2 at Chang-san Air Base. North front door, stairs at the back, upstairs left, first door on the left under the Conference Room sign. Rifle case, up to five lockers with Epic weapons and an equipment case.",
+   "detail": "Key: field loot (ours came from a jacket in Cheongun Outskirts). Opened by us three times, most recently on November 8 with an Ultra Finn LMG in a weapons locker. The key is consumed when the door unlocks.",
+   "colour": "#a970ff"
   },
   {
    "id": "k07",
    "category": "key",
-   "name": "Key B5 (2)",
+   "name": "Field Depot",
    "grid": "B5",
    "x": 17.708,
-   "y": 55.222
+   "y": 55.222,
+   "rarity": "Rare",
+   "verified": true,
+   "info": "Opens the gear maintenance room in the military supply warehouse at Chang-san Air Base, at the end of a side corridor off the warehouse hall. Four military lockers, two footlockers and an armor box inside.",
+   "detail": "Key: field loot. Opened by us.",
+   "colour": "#4aa3ff"
   },
   {
    "id": "k08",
    "category": "key",
-   "name": "Key B5 (3)",
+   "name": "Weapons Mod Workshop",
    "grid": "B5",
    "x": 13.993,
-   "y": 56.519
+   "y": 56.519,
+   "rarity": "Rare",
+   "verified": true,
+   "info": "Opens the weapons workshop on the second floor of the military repair garage at Chang-san Air Base, directly west of the base clinic. In through the wide opening under the red banner on the south side, up the metal stairs, then west to the grey door.",
+   "detail": "Key: field loot. Door found and opened in our own run.",
+   "colour": "#4aa3ff"
   },
   {
    "id": "k09",
    "category": "key",
-   "name": "Key B6 (1)",
+   "name": "Air Base DRC Weapons Locker",
    "grid": "B6",
    "x": 15.104,
-   "y": 62.704
+   "y": 62.704,
+   "rarity": "Ultra",
+   "verified": true,
+   "info": "Opens the yellow and blue DRC locker in The Armory of the Chang-san Air Base Bunker, the same armory Operation Iron Citadel ends in. The armory door needs the six digit code from the three notes in the bunker, and that code changes every match. 3-Plate Helmet Armor and a weapon manual were inside.",
+   "detail": "Key: field loot (ours came from a duffel in Imjin Farmland). Opened by us during Operation Iron Citadel; the locker can stand in more than one spot inside the armory.",
+   "colour": "#ff4d4d"
   },
   {
    "id": "k10",
    "category": "key",
-   "name": "Key B6 (2)",
+   "name": "Supreme Leader's Bunker Access Card",
    "grid": "B6",
    "x": 15.069,
-   "y": 59.889
+   "y": 59.889,
+   "rarity": "Legendary",
+   "verified": true,
+   "info": "The grey blast door of the Supreme Leader's Bunker at the bottom of the bunker under Chang-san Air Base. Behind it the Supreme Leader's suite with 11 containers and an LT crate.",
+   "detail": "Key: drops from Bale, not every kill. Door found and opened in our own run.",
+   "colour": "#f5a623"
   },
   {
    "id": "k11",
    "category": "key",
-   "name": "Key B6 (3)",
+   "name": "Air Base Armory Card (Single Use)",
    "grid": "B6",
    "x": 15.104,
-   "y": 61.481
+   "y": 61.481,
+   "rarity": "Legendary",
+   "verified": true,
+   "info": "The Armory door in the Chang-san Air Base Bunker. It needs the Air Base Armory Card, made from the Air Base Access Card at the terminal in Admin Complex No. 2, and the six-digit code from three notes in the bunker. The code changes every match.",
+   "detail": "Key: upgrade of the Air Base Access Card (Multi Use). Door position from our own run.",
+   "colour": "#f5a623"
   },
   {
    "id": "k12",
    "category": "key",
-   "name": "Key B7 (1)",
+   "name": "Blackmarket Weapons Locker (south Deadtown)",
    "grid": "B7",
    "x": 17.361,
-   "y": 75.63
+   "y": 75.63,
+   "rarity": "Rare",
+   "verified": true,
+   "info": "Opens one of the two weapons lockers in the basement back room of a Blackmarket. There is one in south Deadtown and one in Hanrim Village, the northernmost suburb. Expect an Epic or Rare weapon with attachments.",
+   "detail": "Key: Recon Equipment Kit (Survival Kit), industrial lockers, duffels and jackets. Opened by us.",
+   "colour": "#4aa3ff"
   },
   {
    "id": "k13",
    "category": "key",
-   "name": "Key B7 (2)",
+   "name": "Haksan School Armory",
    "grid": "B7",
    "x": 21.042,
-   "y": 70.296
+   "y": 70.296,
+   "rarity": "Rare",
+   "verified": true,
+   "info": "Opens the makeshift armory, a classroom on the second floor of the school in Deadtown, northeast of the Re-Education Center. Up the outside stairs on the west side, then back north along the walkway to the red door.",
+   "detail": "Key: field loot, also found in a jacket in X01. Door found and opened in our own run.",
+   "colour": "#4aa3ff"
   },
   {
    "id": "k14",
    "category": "key",
-   "name": "Key B7 (3)",
+   "name": "Re-Education Center Annex",
    "grid": "B7",
    "x": 18.889,
-   "y": 72.815
+   "y": 72.815,
+   "rarity": "Epic",
+   "verified": true,
+   "info": "Opens the small annex on the ground floor of the Re-Education Center, the largest building in Deadtown. Go in at the south corner and follow the wall to the left. A legendary Odin and a 2-Plate Ballistic Gel Vest blueprint were found inside.",
+   "detail": "Key: field loot. We hold this key in our stash. Opened by us on October 25 and November 4.",
+   "colour": "#a970ff"
   },
   {
    "id": "k15",
    "category": "key",
-   "name": "Key B7 (4)",
+   "name": "Underground Propaganda Store Room",
    "grid": "B7",
    "x": 18.75,
-   "y": 71.889
+   "y": 71.889,
+   "rarity": "Rare",
+   "verified": true,
+   "info": "Opens the store room in the cell block of the Re-Education Center basement in Deadtown. Its two levers each open one cell next door: the left one with a safe, the right one with a weapons locker.",
+   "detail": "Key: field loot that spawns around the Re-Education Center itself. Door, lever and cell opened in our own runs.",
+   "colour": "#4aa3ff"
   },
   {
    "id": "k16",
    "category": "key",
-   "name": "Key C2 (1)",
+   "name": "Blackmarket Weapons Locker (Hanrim Village)",
    "grid": "C2",
    "x": 29.931,
-   "y": 24.63
+   "y": 24.63,
+   "rarity": "Rare",
+   "verified": true,
+   "info": "Opens one of the two weapons lockers in the basement back room of a Blackmarket. There is one in south Deadtown and one in Hanrim Village, the northernmost suburb. Expect an Epic or Rare weapon with attachments.",
+   "detail": "Key: Recon Equipment Kit (Survival Kit), industrial lockers, duffels and jackets. Opened by us.",
+   "colour": "#4aa3ff"
   },
   {
    "id": "k17",
    "category": "key",
-   "name": "Key C2 (2)",
+   "name": "Deep Vault 301",
    "grid": "C2",
    "x": 27.652,
-   "y": 32.071
+   "y": 32.071,
+   "rarity": "Legendary",
+   "verified": true,
+   "info": "Keycard. Opens Room 301 on the third level of the X01 Deep Vault, under the northwest end of the wing, grid C2. Go through the round Deep Vault gate (the card opens it and is not used up), take the elevator behind it down to the lab level and the stairwell down to level 3. Follow the corridor along the railing past 303 and 302. Room 301 is the last door, with the card reader on the wall.",
+   "detail": "Key: field loot, keys roll randomly. We brought ours in, and on an earlier run one came off an enemy at the foot of the Medical Wing stairs. Room 301 uses the card up. We opened it twice. Both times 5 containers with two weapons lockers, at least $9,600 to $27,400 in loot and no Legendary item. Best find an Epic Ceramic Pup of Loyalty ($6,000) lying loose in the room, then a Stim recipe and a weapon manual ($5,000 each).",
+   "colour": "#f5a623"
   },
   {
    "id": "k18",
    "category": "key",
-   "name": "Key C3",
+   "name": "Prison Encampment Storage",
    "grid": "C3",
    "x": 27.118,
-   "y": 35.889
+   "y": 35.889,
+   "rarity": "Rare",
+   "verified": true,
+   "info": "Opens the ordnance storage on the southeast side of the prison camp at the 14th Political Prison.",
+   "detail": "Key: field loot (ours came from a duffel in Deadtown). Door found and opened in our own run.",
+   "colour": "#4aa3ff"
   },
   {
    "id": "k19",
    "category": "key",
-   "name": "Key C5 (1)",
+   "name": "Police Station Armory (Pyeonghwa Village)",
    "grid": "C5",
    "x": 28.264,
-   "y": 48.704
+   "y": 48.704,
+   "rarity": "Uncommon",
+   "verified": true,
+   "info": "Opens the armory of a police station. The key tooltip says it unlocks any police station armory on Hajin and lists four stations, Cheongun Village, NuriGO Mall north, Revolution Dam and Pyeonghwa Village. The key spawns inside police stations. This is the small station layout, the armory is in the basement behind the dark green door next to the barred hatch.",
+   "detail": "Key: found on a desk upstairs in this station (October 27) and on a desk in the office behind the reception. Door opened in our own runs.",
+   "colour": "#5fd37a"
   },
   {
    "id": "k20",
    "category": "key",
-   "name": "Key C5 (2)",
+   "name": "Executive Room",
    "grid": "C5",
    "x": 28.106,
-   "y": 59.343
+   "y": 59.343,
+   "rarity": "Legendary",
+   "verified": true,
+   "info": "Keycard. Opens the Executive Room on the second floor of the Admin Offices, grid C5. In the statue atrium take the stairs on the west side up and turn back into the small office with the water cooler. The green double door is on its west wall, with the card reader to its right.",
+   "detail": "Key: encoded, not found. Take an Encodable Blank Keycard to the Keycard Encoder Station in the Supply Depot (F2), pick Executive Access and wait about 30 seconds. We opened it five times. The room has 8 containers, with two weapons lockers. A Deep Vault 406 keycard lay on the desk every time. Twice a Weapons Grade Isotope ($12,000) turned up, once a Gilded Medal of Absolute Loyalty ($15,000), once only a Legendary Kastov 762 rifle, and once no Legendary item besides the keycard.",
+   "colour": "#f5a623"
   },
   {
    "id": "k21",
    "category": "key",
-   "name": "Key D2 (1)",
+   "name": "Deep Vault 106",
    "grid": "D2",
    "x": 31.742,
-   "y": 33.418
+   "y": 33.418,
+   "rarity": "Legendary",
+   "verified": true,
+   "info": "Keycard. Opens Room 106 on the lab level of the X01 Deep Vault, grid D2, the first level you reach with the elevator behind the round Deep Vault gate (the card opens the gate and is not used up there). Follow the corridor past the stairwell with the big painted 1 to its end. The door has the number 106 painted large on the wall next to it and a card reader.",
+   "detail": "Key: field loot, keys roll randomly. Ours came off a dead enemy operator in a Data Center stairwell. Room 106 uses the card up. Opened by us: 6 containers with an LT Crate and two weapons lockers, at least $19,850 in loot. Our LT Crate held a Legendary Jeogyeom shotgun ($4,300).",
+   "colour": "#f5a623"
   },
   {
    "id": "k22",
    "category": "key",
-   "name": "Key D2 (2)",
+   "name": "Deep Vault 406",
    "grid": "D2",
    "x": 33.788,
-   "y": 34.007
+   "y": 34.007,
+   "rarity": "Legendary",
+   "verified": true,
+   "info": "Keycard. Opens Room 406 on level 4 of the X01 Deep Vault, grid D2, in the middle of the wing and right under Room 106 on the tac map (the card opens the round Deep Vault gate first and is not used up there). Take the elevator behind the gate down and the stairwell down past the painted 3 to the landing with the big painted 4, then go around the corner and along the hall with the railing. Room 406 is the double door with the 406 plate on the wall to its left and the card reader to its right.",
+   "detail": "Key: field loot, keys roll randomly. We found ours on the desk in the X01 Executive Room, in all three of our openings there. Room 406 uses the card up. Opened by us: 4 safes, at least $28,900 in loot. A Legendary SR-16 Bio Agent Sample ($4,500) lay on the lab table.",
+   "colour": "#f5a623"
   },
   {
    "id": "k23",
    "category": "key",
-   "name": "Key D3",
+   "name": "Police Station Armory (Revolution Dam)",
    "grid": "D3",
    "x": 36.076,
-   "y": 28.556
+   "y": 28.556,
+   "rarity": "Uncommon",
+   "verified": true,
+   "info": "Opens the armory of a police station. The key tooltip says it unlocks any police station armory on Hajin and lists four stations, Cheongun Village, NuriGO Mall north, Revolution Dam and Pyeonghwa Village. The key spawns inside police stations. Here the armory is in the basement, the dark green door next to the barred hatch.",
+   "detail": "Key: ours lay on a small round table in an office upstairs in this station. Door found and opened in our own run.",
+   "colour": "#5fd37a"
   },
   {
    "id": "k24",
    "category": "key",
-   "name": "Key D6",
+   "name": "Haejeok Radio Station",
    "grid": "D6",
    "x": 36.944,
-   "y": 66.778
+   "y": 66.778,
+   "rarity": "Rare",
+   "verified": true,
+   "info": "Opens the radio broadcasting room upstairs in the northernmost relay station in Imjin Farmland, the white building under the red mast. Up the outside stairs on the east end.",
+   "detail": "Key: field loot. We hold this key in our stash. Door found and opened in our own run.",
+   "colour": "#4aa3ff"
   },
   {
    "id": "k25",
    "category": "key",
-   "name": "Key D8 (1)",
+   "name": "Hoesik Supply Room",
    "grid": "D8",
    "x": 38.646,
-   "y": 85.519
+   "y": 85.519,
+   "rarity": "Epic",
+   "verified": true,
+   "info": "Opens the military supply closet upstairs in the southernmost office building at the Rice Mill in Imjin Farmland.",
+   "detail": "Key: field loot. Door found and opened in our own run.",
+   "colour": "#a970ff"
   },
   {
    "id": "k26",
    "category": "key",
-   "name": "Key D8 (2)",
+   "name": "Imjin Mill Foreman's Office",
    "grid": "D8",
    "x": 37.986,
-   "y": 81.185
+   "y": 81.185,
+   "rarity": "Rare",
+   "verified": true,
+   "info": "Opens the foreman's office upstairs at the Rice Mill in Imjin Farmland, reached through the packaging hall.",
+   "detail": "Key: field loot. Door found and opened in our own run.",
+   "colour": "#4aa3ff"
   },
   {
    "id": "k27",
    "category": "key",
-   "name": "Key D8 (3)",
+   "name": "Mill Explosives Lab",
    "grid": "D8",
    "x": 37.569,
-   "y": 82.741
+   "y": 82.741,
+   "rarity": "Uncommon",
+   "verified": false,
+   "info": "Opens the explosives lab at the Rice Mill. The game names the room Mill Explosives Lab when you stand here, but we have not opened the door ourselves yet.",
+   "detail": "Key: field loot.",
+   "colour": "#5fd37a"
   },
   {
    "id": "k28",
    "category": "key",
-   "name": "Key D8 (4)",
+   "name": "Gorani's Scout Overlook",
    "grid": "D8",
    "x": 37.708,
-   "y": 81.519
+   "y": 81.519,
+   "rarity": "Legendary",
+   "verified": true,
+   "info": "Opens the fortified overlook at the top of the Rice Mill in Imjin Farmland: Gorani's loot room with a Lieutenant crate, two weapons lockers, military lockers and an equipment case.",
+   "detail": "Key: dropped by Lieutenant Gorani, ours was in his loot backpack at Mujin Pass. Opened in our own run.",
+   "colour": "#f5a623"
   },
   {
    "id": "k29",
    "category": "key",
-   "name": "Key D8 (5)",
+   "name": "Fire Station Storage (Imjin Farmland)",
    "grid": "D8",
    "x": 34.896,
-   "y": 87.185
+   "y": 87.185,
+   "rarity": "Uncommon",
+   "verified": false,
+   "info": "The storage room upstairs in the Imjin Farmland fire station, a brown wooden door by the stairwell.",
+   "detail": "Uncommon key. Door and prompt confirmed on video; the same key fits every fire station storage room in the tooltip.",
+   "colour": "#5fd37a"
   },
   {
    "id": "k30",
    "category": "key",
-   "name": "Key E4 (1)",
+   "name": "Gun Store Weapons Locker (west Cheongun Village)",
    "grid": "E4",
    "x": 49.549,
-   "y": 42.778
+   "y": 42.778,
+   "rarity": "Rare",
+   "verified": true,
+   "info": "Opens one of the three green weapons lockers in a gun store basement. There are two gun stores: west Cheongun Village, across the street from the police station, and north Songdo Wharf, the shop with the red front. One key opens one locker and gives one weapon with attachments.",
+   "detail": "Key: Trap Equipment Kit and Explosives Equipment Kit (Survival Kits), also field loot. Opened by us.",
+   "colour": "#4aa3ff"
   },
   {
    "id": "k31",
    "category": "key",
-   "name": "Key E4 (2)",
+   "name": "Fire Station Storage (Cheongun Village)",
    "grid": "E4",
    "x": 49.931,
-   "y": 48.037
+   "y": 48.037,
+   "rarity": "Uncommon",
+   "verified": true,
+   "info": "The storage room upstairs in the Cheongun Village fire station on the main road west, two Chemical Storage cabinets and hazmat suits inside. Not every fire station has the key and the door; this one has both.",
+   "detail": "Key: loose spawn (ours lay in the briefing room one floor up in this station). Uncommon. Opened by us.",
+   "colour": "#5fd37a"
   },
   {
    "id": "k32",
    "category": "key",
-   "name": "Key E4 (3)",
+   "name": "Superintendent's Office",
    "grid": "E4",
    "x": 45.227,
-   "y": 50.421
+   "y": 50.421,
+   "rarity": "Epic",
+   "verified": true,
+   "info": "Keycard. Opens the Superintendent's Office up on an elevated platform in the X01 Main Warehouse, on the Main Warehouse floor, just west of the Main Warehouse icon (the tooltip says F4, where the climb starts; the office sits just west of that line in E4). One way in. Take the metal stairs up, climb over the IBC tank onto the upper deck, then jump from the blue barrels across to the small balcony in front of the door. Card reader to the right of the door, next to a red no-entry sign.",
+   "detail": "Key: field loot, keys roll randomly. The door uses it up. Opened by us three times: 14 containers including two weapons lockers, at least $51,450 to $60,050 in loot per run. The best finds lie loose in the room: a Legendary Weapons Grade Isotope ($12,000) and Human Trial Records: R-18 ($8,000 each).",
+   "colour": "#a970ff"
   },
   {
    "id": "k33",
    "category": "key",
-   "name": "Key E5 (1)",
+   "name": "Rail Depot Storage",
    "grid": "E5",
    "x": 48.264,
-   "y": 48.667
+   "y": 48.667,
+   "rarity": "Rare",
+   "verified": true,
+   "info": "Opens the storage room in the basement of the train depot next to the Cheongun Village fire station. Lockers, cases and cash were reported inside. Some sites call it Train Depot Storage Room.",
+   "detail": "Key: field loot. Opened by us on October 25.",
+   "colour": "#4aa3ff"
   },
   {
    "id": "k34",
    "category": "key",
-   "name": "Key E5 (2)",
+   "name": "Maintenance Room",
    "grid": "E5",
    "x": 45.606,
-   "y": 66.498
+   "y": 66.498,
+   "rarity": "Rare",
+   "verified": true,
+   "info": "Keycard. Opens the Maintenance Room at the top of the X01 Production Assembly on the Data Center floor, grid E5, next to fenced pipework. From the Production Assembly hall take the metal stairs up to the catwalk, climb the yellow ladder and take the concrete stairs to the top level. The door is at the far end of the room with the big insulated pipe behind a red fence, with a red no-entry sign and the card reader on its right.",
+   "detail": "Key: encode it from an Encodable Blank Keycard at the Keycard Encoder Station in the Supply Depot (F2) by picking Maintenance Access, about 15 seconds, or find it as field loot (we found one in a jacket in the Executive Room). Opened by us: 14 containers with four server blades and five military lockers. Animal Trial Records: R-4 ($3,000) lay on a shelf and a server blade held an Encrypted Archive ($2,000).",
+   "colour": "#4aa3ff"
   },
   {
    "id": "k35",
    "category": "key",
-   "name": "Key E7",
+   "name": "Lt. Chol-Min's Stash Room",
    "grid": "E7",
    "x": 41.894,
-   "y": 86.364
+   "y": 86.364,
+   "rarity": "Legendary",
+   "verified": true,
+   "info": "Key. Opens Lt. Chol-Min's Stash Room on the upper level of the X01 Motor Pool, Main Warehouse floor, grid E7, above the hall where Lieutenant Chol-Min sits. Go up the rope inside the barred cage at the northwest corner of the Motor Pool block (if the gates will not open, kill Chol-Min in the room first, the way up is blocked while he is there), walk through the room with the control panels and follow the catwalk south across the hall. The stash room is the blue door at the end, with the card reader on the wall to its left.",
+   "detail": "Key: said to drop from Lieutenant Chol-Min, whose room is right below the stash room, but not in any of our five kills of him. Opened by us: 5 containers, at least $29,300 in loot. The LT crate held a Legendary Swaegolja LMG ($8,000), a Cipher Code Ledger and a Medium Scavenger Backpack recipe.",
+   "colour": "#9aa3ab"
   },
   {
    "id": "k36",
    "category": "key",
-   "name": "Key F4 (1)",
+   "name": "Counting Room Vault",
    "grid": "F4",
    "x": 56.736,
-   "y": 43.889
+   "y": 43.889,
+   "rarity": "Epic",
+   "verified": true,
+   "info": "Opens the Counting Room on the main floor of the Heavenly Luck Casino. In through the main doors on the south side, right into the hall with the cashier windows, through the No Public Access door and the back offices to the wooden door with a keypad beside it. Inside: 7 containers and loose valuables over two rooms.",
+   "detail": "Key: reward of Operation Silent Ledger, also drops as field loot. Door found and opened in our own run.",
+   "colour": "#a970ff"
   },
   {
    "id": "k37",
    "category": "key",
-   "name": "Key F4 (2)",
+   "name": "Jin-Tae's Private Lounge",
    "grid": "F4",
    "x": 55.382,
-   "y": 43.333
+   "y": 43.333,
+   "rarity": "Legendary",
+   "verified": true,
+   "info": "Jin-Tae's Private Lounge, high up in the Heavenly Luck Casino. Take the emergency stairs and the terrace up to the landing marked 7. 8 containers, including the LT crate and two weapons lockers.",
+   "detail": "Key: drops from Jin-Tae, the casino Lieutenant. Door found and opened in our own run.",
+   "colour": "#f5a623"
   },
   {
    "id": "k38",
    "category": "key",
-   "name": "Key F4 (3)",
+   "name": "Police Station Armory (Cheongun Village)",
    "grid": "F4",
    "x": 51.528,
-   "y": 43.556
+   "y": 43.556,
+   "rarity": "Uncommon",
+   "verified": true,
+   "info": "Opens the armory of a police station. The key tooltip says it unlocks any police station armory on Hajin and lists four stations, Cheongun Village, NuriGO Mall north, Revolution Dam and Pyeonghwa Village. The key spawns inside police stations. This is a big city station like NuriGO Mall. The armory is in the basement cell block, the grey metal door between two barred cells, and is larger than in the small stations.",
+   "detail": "Key: found on a desk in an upstairs office of this station (October 25). Door found and opened in our own run, checked against the minimap.",
+   "colour": "#5fd37a"
   },
   {
    "id": "k39",
    "category": "key",
-   "name": "Key F4 (4)",
+   "name": "Vault Armory",
    "grid": "F4",
    "x": 54.757,
-   "y": 43.815
+   "y": 43.815,
+   "rarity": "Epic",
+   "verified": true,
+   "info": "Opens the caged armory in the underground parking of the Heavenly Luck Casino. North entrance, right into the west wing, double doors at the back down to the garage, the room at the foot of the northwest stairs. Armor box, weapon case, two weapons lockers, a medium backpack and server blades.",
+   "detail": "Key: field loot (ours came from a duffel in Songdo Wharf, the casino carpet, the Haneul Nuclear Reactor and the Pyeonghwa fire station). Opened by us five times, with an Ultra Type 73 LMG in a weapons locker and a Legendary Patriot XMR in a rifle case among the best finds.",
+   "colour": "#a970ff"
   },
   {
    "id": "k40",
    "category": "key",
-   "name": "Key F4 (5)",
+   "name": "Bank Branch Vault Access (Cheongun Village branch)",
    "grid": "F4",
    "x": 54.201,
-   "y": 47.778
+   "y": 47.778,
+   "rarity": "Rare",
+   "verified": true,
+   "info": "The Hanex Branch Bank on the south side of the main road through Cheongun Village, east of the roundabout and below the Heavenly Luck Casino. We opened this vault ourselves: car battery into the fuse box by the stairs sign, the Bank Branch Vault Access keycard lay on the floor behind the teller windows among loose cash, swipe it at the vault door, then read the note on the floor for the first three digits of the code and try the last one. Inside were two safes, a Cipher Code Ledger and Nuclear Program Files.",
+   "detail": "Opened in our own run (DMZ Orders page 20, The Vault). No fixed code exists.",
+   "colour": "#4aa3ff"
   },
   {
    "id": "k41",
    "category": "key",
-   "name": "Key F4 (6)",
+   "name": "Small Test Chamber",
    "grid": "F4",
    "x": 49.545,
-   "y": 52.189
+   "y": 52.189,
+   "rarity": "Epic",
+   "verified": true,
+   "info": "Keycard. Opens the Small Test Chamber inside the X01 Tech Lab on the Data Center floor, grid F4, in front of the security checkpoints. From the Logistics Tunnel go into the Tech Lab and past the reception counter. The door has a red no-entry sign and a keypad on the wall to its left.",
+   "detail": "Keycard: encode it from an Encodable Blank Keycard at the Keycard Encoder Station in the Data Center (I5) by picking Engineering Access, about 20 seconds. We brought ours in from the stash, and on an earlier run one came off an enemy player in the Deep Vault. We opened it twice and counted 6 containers each time, with a safe, two weapons lockers, a supply crate, a footlocker and a tool chest. The safe held an Ultra valuable ($25,000) both times, once a Gold Bar and once a Gold Skull.",
+   "colour": "#a970ff"
   },
   {
    "id": "k42",
    "category": "key",
-   "name": "Key F5 (1)",
+   "name": "Mechanic's Shack",
    "grid": "F5",
    "x": 51.458,
-   "y": 50.815
+   "y": 50.815,
+   "rarity": "Rare",
+   "verified": true,
+   "info": "Opens the stand alone shed with a single white door directly south of the Cheongun Village clinic.",
+   "detail": "Key: field loot. Door found and opened in our own run.",
+   "colour": "#4aa3ff"
   },
   {
    "id": "k43",
    "category": "key",
-   "name": "Key F5 (2)",
+   "name": "Mirae Electrical Room",
    "grid": "F5",
    "x": 56.84,
-   "y": 52.222
+   "y": 52.222,
+   "rarity": "Rare",
+   "verified": true,
+   "info": "Opens the electrical room on level B2 of the northwest parking garage of Mirae General Hospital. From the ring road, slide under the half closed roller door with the P sign, go to the lowest level and the grey double doors at the back past the servers. Tool chests, military bags, armor boxes and a medium weapon backpack.",
+   "detail": "Key: reward of Operation Critical Extraction, also field loot. Opened by us on October 25 and November 4; position from our minimap.",
+   "colour": "#4aa3ff"
   },
   {
    "id": "k44",
    "category": "key",
-   "name": "Key F5 (3)",
+   "name": "The Doctor's Command Office",
    "grid": "F5",
    "x": 57.118,
-   "y": 54.63
+   "y": 54.63,
+   "rarity": "Legendary",
+   "verified": true,
+   "info": "Lieutenant The Doctor's room: the converted conference room on floor 7 of Mirae General Hospital, behind a brown wooden door with a card reader. Lieutenant crate, two weapons lockers, five military lockers, two rifle cases and three armor boxes.",
+   "detail": "Key: drops from The Doctor. Door found and opened in our own run (minimap position).",
+   "colour": "#f5a623"
   },
   {
    "id": "k45",
    "category": "key",
-   "name": "Key F5 (4)",
+   "name": "Hospital Chemical Lab",
    "grid": "F5",
    "x": 57.396,
-   "y": 54.741
+   "y": 54.741,
+   "rarity": "Rare",
+   "verified": true,
+   "info": "The chemical lab in the basement of Mirae General Hospital. Go in through the front entrance, down the stairwell from the lobby and along the green corridor to the wooden door. Three padlocked chemical lockers inside need the Hospital Chemical Lockers key, one key per locker.",
+   "detail": "Key: set spawn on the 7th floor of the hospital, on an office desk. Door found and opened in our own run.",
+   "colour": "#4aa3ff"
   },
   {
    "id": "k46",
    "category": "key",
-   "name": "Key F5 (5)",
+   "name": "Hospital Chemical Lockers",
    "grid": "F5",
    "x": 57.5,
-   "y": 54.556
+   "y": 54.556,
+   "rarity": "Rare",
+   "verified": true,
+   "info": "Three padlocked yellow chemical lockers inside the Hospital Chemical Lab in the basement of Mirae General Hospital. Open the lab door with the Hospital Chemical Lab key first. Each lockers key opens one locker.",
+   "detail": "Key: spawns inside the hospital (ours in the morgue and on a lab bench). All three lockers opened in our own run.",
+   "colour": "#4aa3ff"
   },
   {
    "id": "k47",
    "category": "key",
-   "name": "Key F7 (1)",
+   "name": "Iskra's Control Room",
    "grid": "F7",
    "x": 50.903,
-   "y": 69
+   "y": 69,
+   "rarity": "Legendary",
+   "verified": true,
+   "info": "Iskra's Control Room on floor 4 of the main building at Cheonwang Peak Array. 20 containers and a security station with six cameras around the array.",
+   "detail": "Key: drops from Iskra. Door found and opened in our own run.",
+   "colour": "#f5a623"
   },
   {
    "id": "k48",
    "category": "key",
-   "name": "Key F7 (2)",
+   "name": "Shop Records Room",
    "grid": "F7",
    "x": 58.125,
-   "y": 77.444
+   "y": 77.444,
+   "rarity": "Rare",
+   "verified": true,
+   "info": "Opens the records room above the Goh24 supermart just south of the Wolves Stadium clinic. Take the green outside stairs up; the frosted glass door is at the top. A duffel with documents and lockers were reported inside.",
+   "detail": "Key: field loot. Opened by us twice (October 25 and November 4).",
+   "colour": "#4aa3ff"
   },
   {
    "id": "k49",
    "category": "key",
-   "name": "Key G5",
+   "name": "Audit Room",
    "grid": "G5",
    "x": 61.212,
-   "y": 60.185
+   "y": 60.185,
+   "rarity": "Epic",
+   "verified": true,
+   "info": "Keycard. Opens the Audit Room on the Main Warehouse floor, grid G5. From the Main Warehouse hall take the stairwell on the east side up, follow the corridor and turn into the dark corridor. The door has a red no-entry sign and a card reader on its left.",
+   "detail": "Key: encode it from an Encodable Blank Keycard at the Keycard Encoder Station in the Data Center (I5) by picking Audit Officer Access, about 20 seconds, or find it as field loot. Ours came from a jacket on a coat stand in the Supply Depot, earlier ones from an Industrial Locker in the Supply Depot, a jacket on a shelf in the Bio Lab and the Admin Offices surveillance room. We opened it twice and counted 7 containers each time, with a safe, two weapons lockers and a green duffel bag. The safe held a Legendary Gilded Medal of Absolute Loyalty ($15,000) both times, the second time two of them.",
+   "colour": "#a970ff"
   },
   {
    "id": "k50",
    "category": "key",
-   "name": "Key G6 (1)",
+   "name": "Coin Mining Den",
    "grid": "G6",
    "x": 66.146,
-   "y": 60.667
+   "y": 60.667,
+   "rarity": "Rare",
+   "verified": true,
+   "info": "Opens the e-coin mining lab in NuriGO West, the apartment block directly east of the westernmost gas station inside NuriGO Mall. South stairwell with the red railings, landing marked 3, grey door with a handle under the Office sign. Server racks, computers and crafting parts such as CPUs and circuit boards, no weapons.",
+   "detail": "Key: reward of Operation Shopping Hacks. Opened by us on October 25.",
+   "colour": "#4aa3ff"
   },
   {
    "id": "k51",
    "category": "key",
-   "name": "Key G6 (2)",
+   "name": "Executive Arms Auction",
    "grid": "G6",
    "x": 67.986,
-   "y": 64.889
+   "y": 64.889,
+   "rarity": "Epic",
+   "verified": true,
+   "info": "Opens the arms auction room, a dining hall near the top of DBN Headquarters, the tallest tower in The Grid. Opened by us twice, with 14 containers each time, including a safe, weapons lockers and military lockers.",
+   "detail": "Key: field loot (one came from the safe in the south office at Cheonwang Peak Array). Door confirmed in our own runs, most recently on November 11. Up the stairwell with two ropes. The key is consumed when the door unlocks.",
+   "colour": "#a970ff"
   },
   {
    "id": "k52",
    "category": "key",
-   "name": "Key G6 (3)",
+   "name": "Hanex Guard Station",
    "grid": "G6",
    "x": 69.028,
-   "y": 66.185
+   "y": 66.185,
+   "rarity": "Epic",
+   "verified": true,
+   "info": "Opens the guard room one floor below the roof of the Hanex Bank tower in The Grid, between two vault rooms. Stairs or a zipline get you up. Two weapon lockers, a safe, an equipment case and high tier weapons. The bank vault itself is not a key lock: it needs a car battery, the Bank Branch Vault Access keycard and a code.",
+   "detail": "Key: field loot, no fixed spawn known. Opened by us on October 25 and again on November 4.",
+   "colour": "#a970ff"
   },
   {
    "id": "k53",
    "category": "key",
-   "name": "Key G6 (4)",
+   "name": "Netshin IT Room",
    "grid": "G6",
    "x": 64.236,
-   "y": 65.185
+   "y": 65.185,
+   "rarity": "Epic",
+   "verified": true,
+   "info": "Opens the secured server room on floor 14 of the Netshin Tech Complex, behind the main server hall. A weapons locker and a lot of server blades, which are comms modules for crafting.",
+   "detail": "Key: field loot. Opened by us twice (October 25 and November 4).",
+   "colour": "#a970ff"
   },
   {
    "id": "k54",
    "category": "key",
-   "name": "Key G6 (5)",
+   "name": "Netshin Security Office",
    "grid": "G6",
    "x": 63.958,
-   "y": 64.333
+   "y": 64.333,
+   "rarity": "Rare",
+   "verified": true,
+   "info": "Opens the security office on an upper floor of the Netshin Tech Complex in The Grid, the green door with the Security Wing sign next to it.",
+   "detail": "Key: field loot. Door found and opened in our own run (minimap position).",
+   "colour": "#4aa3ff"
   },
   {
    "id": "k55",
    "category": "key",
-   "name": "Key G6 (6)",
+   "name": "Roze's Highrise Armory",
    "grid": "G6",
    "x": 65.799,
-   "y": 65.667
+   "y": 65.667,
+   "rarity": "Legendary",
+   "verified": true,
+   "info": "Opens the armory on floor 14 of the Netshin Tech Complex, a teal door without a sign on the east side. Extreme threat with robodogs and turrets, so barricade the door. A Lieutenant crate and two weapon lockers.",
+   "detail": "Key: reward of Operation Grid Assault, also a drop from Lieutenant Roze. Opened by us on October 25.",
+   "colour": "#f5a623"
   },
   {
    "id": "k56",
    "category": "key",
-   "name": "Key G6 (7)",
+   "name": "Downtown Branch Lobby Main",
    "grid": "G6",
    "x": 65.417,
-   "y": 62.481
+   "y": 62.481,
+   "rarity": "Uncommon",
+   "verified": true,
+   "info": "The glass front doors of the Hanex Bank branch on the north edge of The Grid, across the street from NuriGO West, up the front steps. Inside lie a Bank Branch Vault Access card upstairs, a security door upstairs and a fuse box in the underground car park, the same vault setup as the other Hanex Bank branches.",
+   "detail": "Key: field loot. Door found and opened in our own run (minimap position); vault not opened, no car battery or code note found.",
+   "colour": "#5fd37a"
   },
   {
    "id": "k57",
    "category": "key",
-   "name": "Key G7 (1)",
+   "name": "Gangbyeon Apartment B",
    "grid": "G7",
    "x": 67.847,
-   "y": 78.556
+   "y": 78.556,
+   "rarity": "Uncommon",
+   "verified": true,
+   "info": "Opens the glass double doors of apartment block B at Hajin River Heights, the stronghold with the SAM site on the roof. The key is reported to spawn loose inside apartment A next door.",
+   "detail": "Key: loose spawn around Compound Echo (ours on a bookshelf in an apartment just south-west of block B). Door found and opened in our own run.",
+   "colour": "#5fd37a"
   },
   {
    "id": "k58",
    "category": "key",
-   "name": "Key G7 (2)",
+   "name": "Hanwoori Art Records Room",
    "grid": "G7",
    "x": 69.028,
-   "y": 72.037
+   "y": 72.037,
+   "rarity": "Rare",
+   "verified": true,
+   "info": "Opens the records room on the first floor of the Hanwoori Design Complex, the southeast building of The Grid with the SAM site. Take the south Grid entrance, the building on the left, stairs to the north main entrance, then the back door on the left. Rifle case, military bag, foot lockers, filing cabinets and an equipment case.",
+   "detail": "Key: field loot. We hold this key in our stash. Door opened and looted in our own run.",
+   "colour": "#4aa3ff"
   },
   {
    "id": "k59",
    "category": "key",
-   "name": "Key G7 (3)",
+   "name": "Militia Arms Depot",
    "grid": "G7",
    "x": 68.056,
-   "y": 78.889
+   "y": 78.889,
+   "rarity": "Rare",
+   "verified": true,
+   "info": "Opens a whole apartment one flight up the stairs inside apartment block B at Compound Echo, Hajin River Heights. You need the Gangbyeon Apartment B key first for the front door of the block.",
+   "detail": "Key: field loot. Door found and opened in our own run.",
+   "colour": "#4aa3ff"
   },
   {
    "id": "k60",
    "category": "key",
-   "name": "Key G7 (4)",
+   "name": "Police Station Armory (Wolves Stadium)",
    "grid": "G7",
    "x": 64.028,
-   "y": 76.519
+   "y": 76.519,
+   "rarity": "Uncommon",
+   "verified": false,
+   "info": "Opens the caged armory on the ground floor of a police station. The key usually spawns inside the same station, on a desk upstairs or behind the reception. Every police station has an armory; whether one key opens every station is something we are testing.",
+   "detail": "Not on the key tooltip's list of four stations. We have not confirmed an armory door for this key here.",
+   "colour": "#5fd37a"
   },
   {
    "id": "k61",
    "category": "key",
-   "name": "Key G7 (5)",
+   "name": "Police Weapon Depository",
    "grid": "G7",
    "x": 63.785,
-   "y": 75.222
+   "y": 75.222,
+   "rarity": "Epic",
+   "verified": true,
+   "info": "Opens the white garage building with the green roller door next to the Wolves Stadium police station. Lockers with Epic weapons were reported inside.",
+   "detail": "Key: field loot. Opened by us on October 25 and November 4.",
+   "colour": "#a970ff"
   },
   {
    "id": "k62",
    "category": "key",
-   "name": "Key G7 (6)",
+   "name": "Gangbyeon Apartment A",
    "grid": "G7",
    "x": 67.222,
-   "y": 78.963
+   "y": 78.963,
+   "rarity": "Unknown",
+   "verified": false,
+   "info": "The front door of apartment block A at Hajin River Heights, next to block B. It shows the prompt Gangbyeon Apartment A, Locked, but block A is reached through the underground car park. We have never found a key for this door and do not think one exists. The Gangbyeon Apartment B key can spawn inside block A.",
+   "detail": "No key found by us. Door and prompt seen on video.",
+   "colour": "#9aa3ab"
   },
   {
    "id": "k63",
    "category": "key",
-   "name": "Key G8",
+   "name": "Bank Branch Vault Access (Wolves Stadium branch)",
    "grid": "G8",
    "x": 60.069,
-   "y": 79.926
+   "y": 79.926,
+   "rarity": "Rare",
+   "verified": true,
+   "info": "The Hanex Branch Bank just south of Wolves Stadium, next to the gas station and the UAV tower. We opened this vault ourselves: car battery into the sparking fuse box, the Bank Branch Vault Access keycard lay on the teller counter, swipe it at the security door in the red office, read the note in the lobby for the first three digits of the code, then go down the stairs and try the last digit on the vault keypad.",
+   "detail": "Keycard spawns inside the bank (ours lay on the teller counter). Opened by us with a car battery, the card and the code from the note in the lobby.",
+   "colour": "#4aa3ff"
   },
   {
    "id": "k64",
    "category": "key",
-   "name": "Key H4 (1)",
+   "name": "Reactor 02 Control Room",
    "grid": "H4",
    "x": 78.646,
-   "y": 40.778
+   "y": 40.778,
+   "rarity": "Rare",
+   "verified": true,
+   "info": "Opens the control room in Reactor 02, a grey double door on the second floor that you face looking south. The corner is very dark and radiation reads High, so bring a hazmat suit or several gas masks.",
+   "detail": "Key: field loot (ours came from a duffel in the Commandant Office at Chang-san Air Base). Door found and opened in our own run.",
+   "colour": "#4aa3ff"
   },
   {
    "id": "k65",
    "category": "key",
-   "name": "Key H4 (2)",
+   "name": "Reactor DRC Locker",
    "grid": "H4",
    "x": 78.924,
-   "y": 41.481
+   "y": 41.481,
+   "rarity": "Ultra",
+   "verified": true,
+   "info": "Opens the DRC locker under water in the irradiated pool of Reactor 02, the round building. Bring a hazmat suit or gas masks. It opens an Elite Weapons Locker with a weapon manual, an Epic weapon and a 3-plate vest in the runs we checked.",
+   "detail": "Key: reward of Operation Fallen Ember. Locker found and opened in our own run (minimap position).",
+   "colour": "#ff4d4d"
   },
   {
    "id": "k66",
    "category": "key",
-   "name": "Key H4 (3)",
+   "name": "Utility Maintenance Storage",
    "grid": "H4",
    "x": 77.778,
-   "y": 44.926
+   "y": 44.926,
+   "rarity": "Rare",
+   "verified": true,
+   "info": "Opens the maintenance room in the basement under the transformer yard next to Reactor 01 at Haneul Nuclear Reactor. Sunken stairs between the transformers lead down; the brown door with the fuse box is in the corridor.",
+   "detail": "Key: field loot. Door found and opened in our own run.",
+   "colour": "#4aa3ff"
   },
   {
    "id": "k67",
    "category": "key",
-   "name": "Key H5",
+   "name": "Police Station Armory (NuriGO Mall north)",
    "grid": "H5",
    "x": 72.118,
-   "y": 58.593
+   "y": 58.593,
+   "rarity": "Uncommon",
+   "verified": true,
+   "info": "Opens the armory of a police station. The key tooltip says it unlocks any police station armory on Hajin and lists four stations, Cheongun Village, NuriGO Mall north, Revolution Dam and Pyeonghwa Village. The key spawns inside police stations. This is the big city station. The armory is in the basement cell block, the grey metal door between two barred cells, and is larger than in the small stations.",
+   "detail": "Key: ours lay on the floor of an office upstairs in this station. Door found and opened in our own run.",
+   "colour": "#5fd37a"
   },
   {
    "id": "k68",
    "category": "key",
-   "name": "Key H6 (1)",
+   "name": "Jang-ui's Converted Power Room",
    "grid": "H6",
    "x": 71.84,
-   "y": 62.778
+   "y": 62.778,
+   "rarity": "Legendary",
+   "verified": true,
+   "info": "Jang-ui's Converted Power Room, the dark generator room on the bottom floor of NuriGO Mall. 10 containers, the best loot is in the LT crate.",
+   "detail": "Key: drops from Jang-ui. Door found and opened in our own run.",
+   "colour": "#f5a623"
   },
   {
    "id": "k69",
    "category": "key",
-   "name": "Key H6 (2)",
+   "name": "Shopping DRC Locker",
    "grid": "H6",
    "x": 69.688,
-   "y": 62.259
+   "y": 62.259,
+   "rarity": "Ultra",
+   "verified": false,
+   "info": "Opens the DRC locker in the DRC Labs, deep in the high security lower parking garage under NuriGO Mall where Operation Shopping Hacks ends. The lab door takes 8 to 10 robodog cores first. DRC lockers are called Elite Weapons Locker in game.",
+   "detail": "Key: field loot. Opened by us during Operation Shopping Hacks.",
+   "colour": "#ff4d4d"
   },
   {
    "id": "k70",
    "category": "key",
-   "name": "Key H6 (3)",
+   "name": "Fire Station Storage (NuriGo Mall)",
    "grid": "H6",
    "x": 74.514,
-   "y": 62.852
+   "y": 62.852,
+   "rarity": "Uncommon",
+   "verified": true,
+   "info": "The storage room upstairs in the eastern NuriGo Mall fire station, a brown wooden door by the stairwell next to the red lockers. Two Chemical Storage cabinets and hazmat suits inside. Not every fire station has the key and the door; this one has both.",
+   "detail": "Key: loose spawn (ours lay on a restroom sink one floor up in this station). Uncommon. Opened by us.",
+   "colour": "#5fd37a"
   },
   {
    "id": "k71",
    "category": "key",
-   "name": "Key H7 (1)",
+   "name": "Gas Station Electrical Room",
    "grid": "H7",
    "x": 73.472,
-   "y": 73.111
+   "y": 73.111,
+   "rarity": "Rare",
+   "verified": true,
+   "info": "Opens the basement under the Korin Oil gas station on the south side of the Construction Zone. Into the shop, through the door at the back and down the stairs to the grey metal door. We counted 17 containers over a few small rooms.",
+   "detail": "Key: field loot. Door found and opened in our own run.",
+   "colour": "#4aa3ff"
   },
   {
    "id": "k72",
    "category": "key",
-   "name": "Key H7 (2)",
+   "name": "Lucera Suite 703 Bedroom",
    "grid": "H7",
    "x": 69.479,
-   "y": 68.963
+   "y": 68.963,
+   "rarity": "Epic",
+   "verified": true,
+   "info": "Opens the bedroom inside suite 703 of Hotel Lucera, next to the Hanex Bank tower. The suite is open, only the bedroom is locked. Stairs to floor 12 and one more flight, or the zipline in the lift shaft, then rooms 702 and 703. Rifle case, supply crate and weapons lockers.",
+   "detail": "Key: field loot. Door found and opened in our own run.",
+   "colour": "#a970ff"
   },
   {
    "id": "k73",
    "category": "key",
-   "name": "Key H7 (3)",
+   "name": "Hotel Lucera Lobby",
    "grid": "H7",
    "x": 70.625,
-   "y": 69.593
+   "y": 69.593,
+   "rarity": "Unknown",
+   "verified": false,
+   "info": "The glass street door into the lobby of Hotel Lucera. It shows the prompt Hotel Lucera Lobby, Locked, but we have never found a key for it and do not think one exists. Inside the hotel, suite 703 has its own bedroom key.",
+   "detail": "No key found by us. Door and prompt seen on video.",
+   "colour": "#9aa3ab"
   },
   {
    "id": "k74",
    "category": "key",
-   "name": "Key I4",
+   "name": "The Chemist's Secure Armory",
    "grid": "I4",
    "x": 81.25,
-   "y": 40.667
+   "y": 40.667,
+   "rarity": "Legendary",
+   "verified": true,
+   "info": "Lieutenant The Chemist's bunker: white double doors in a concrete bunker on the northeast side of the reactor compound, just inside the radiation zone. Lieutenant crate, two weapons lockers, chemical storage, two Caches and Durable Gas Masks on the shelves.",
+   "detail": "Key: drops from The Chemist. Door found and opened in our own run (minimap position).",
+   "colour": "#f5a623"
   },
   {
    "id": "k75",
    "category": "key",
-   "name": "Key I5",
+   "name": "Hazard Storehouse",
    "grid": "I5",
    "x": 81.25,
-   "y": 50.593
+   "y": 50.593,
+   "rarity": "Rare",
+   "verified": true,
+   "info": "Opens the material storage warehouse south of the cooling towers, a white shed with a Storage sign in the radiation zone at the reactor. The blue door is on the east side.",
+   "detail": "Key: field loot. Door found and opened in our own run.",
+   "colour": "#4aa3ff"
   },
   {
    "id": "k76",
    "category": "key",
-   "name": "Key I6",
+   "name": "Gun Store Weapons Locker (north Songdo Wharf)",
    "grid": "I6",
    "x": 79.931,
-   "y": 66.963
+   "y": 66.963,
+   "rarity": "Rare",
+   "verified": true,
+   "info": "Opens one of the three green weapons lockers in a gun store basement. There are two gun stores: west Cheongun Village, across the street from the police station, and north Songdo Wharf, the shop with the red front. One key opens one locker and gives one weapon with attachments.",
+   "detail": "Key: Trap Equipment Kit and Explosives Equipment Kit (Survival Kits), also field loot. Opened by us.",
+   "colour": "#4aa3ff"
   },
   {
    "id": "k77",
    "category": "key",
-   "name": "Key I7 (1)",
+   "name": "Bank Branch Vault Access (north Songdo Wharf)",
    "grid": "I7",
    "x": 80.833,
-   "y": 68.889
+   "y": 68.889,
+   "rarity": "Rare",
+   "verified": false,
+   "info": "The keycard for the vault of a Hanex Bank branch. It spawns inside the bank. Put a car battery (one spawns in the bank, or bring your own) in the sparking power panel, swipe the card at the vault door, then enter the four digit code: a note in the bank gives the first three digits and you try the last one. Three branches are on the map: north Songdo Wharf, the branch just south of Wolves Stadium next to the gas station, and the Cheongun Village branch south of the main road, which we opened ourselves.",
+   "detail": "No fixed code exists. Counts for the order Find a Way Inside the Vault. Door and prompt confirmed on video (Incredilags).",
+   "colour": "#4aa3ff"
   },
   {
    "id": "k78",
    "category": "key",
-   "name": "Key I7 (2)",
+   "name": "Old Barber Shop",
    "grid": "I7",
    "x": 80.417,
-   "y": 76.148
+   "y": 76.148,
+   "rarity": "Rare",
+   "verified": true,
+   "info": "Opens the old barber shop in the row of shops on the south side of Songdo Wharf, the grey double door under the pink nail salon sign. Military lockers, MINA MS41 crates, military bags and lots of armor plates.",
+   "detail": "Key: field loot. Door found and opened in our own run; position from our minimap.",
+   "colour": "#4aa3ff"
   }
- ]
+ ],
+ "rarityColours": {
+  "Uncommon": "#5fd37a",
+  "Rare": "#4aa3ff",
+  "Epic": "#a970ff",
+  "Legendary": "#f5a623",
+  "Ultra": "#ff4d4d",
+  "Unknown": "#9aa3ab"
+ }
 }

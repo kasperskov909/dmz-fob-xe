@@ -2,71 +2,85 @@
   {
     "id": "key",
     "label": "Keys",
-    "colour": "#E8C15A"
+    "colour": "#E8C15A",
+    "icon": "key"
   },
   {
     "id": "gunstore",
     "label": "Gun Store",
-    "colour": "#4AA3FF"
+    "colour": "#4AA3FF",
+    "icon": "gun"
   },
   {
     "id": "wlocker",
     "label": "Weapons Locker",
-    "colour": "#2E6B3C"
+    "colour": "#2E6B3C",
+    "icon": "locker"
   },
   {
     "id": "bwlocker",
     "label": "Basic Weapons Locker",
-    "colour": "#C9935E"
+    "colour": "#C9935E",
+    "icon": "locker"
   },
   {
     "id": "exfil",
     "label": "Exfil",
-    "colour": "#39C7E6"
+    "colour": "#39C7E6",
+    "icon": "exfil"
   },
   {
     "id": "printer",
     "label": "3D Printer",
-    "colour": "#D9DEE4"
+    "colour": "#D9DEE4",
+    "icon": "printer"
   },
   {
     "id": "bounty",
     "label": "Bounty Station",
-    "colour": "#D6C34A"
+    "colour": "#D6C34A",
+    "icon": "bounty"
   },
   {
     "id": "safe",
     "label": "Safe",
-    "colour": "#F2B544"
+    "colour": "#F2B544",
+    "icon": "safe"
   },
   {
     "id": "poi",
     "label": "Major POI",
-    "colour": "#FFD000"
+    "colour": "#FFD000",
+    "icon": "poi"
   },
   {
     "id": "fort",
     "label": "Stronghold",
-    "colour": "#FF5A36"
+    "colour": "#FF5A36",
+    "icon": "fort"
   },
   {
     "id": "lt",
     "label": "Lieutenant",
-    "colour": "#E0473F"
+    "colour": "#E0473F",
+    "icon": "lt"
   },
   {
     "id": "uav",
     "label": "UAV Tower",
-    "colour": "#3FA9F5"
+    "colour": "#3FA9F5",
+    "icon": "uav"
   },
   {
     "id": "ammo",
     "label": "Ammo Cache",
-    "colour": "#9AA5B1"
+    "colour": "#9AA5B1",
+    "icon": "ammo"
   },
   {
     "id": "hcache",
     "label": "Hidden Cache",
-    "colour": "#A06A5E"
+    "colour": "#A06A5E",
+    "icon": "cache"
   }
 ]
