@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>'DMZ Fob'</title>
+  <link rel="icon" href="resources/icon.svg" />
+  <meta name="x-icue-widget-group" content="DMZ" />
+  <meta name="x-icue-widget-preview" content="resources/preview.png" />
+  <link rel="stylesheet" href="styles/base.css" />
+  <link rel="stylesheet" href="styles/layout.css" />
+</head>
+<body>
+  <div id="app" data-orientation="landscape">
+    <nav class="tabs" role="tablist" aria-label="Fob sections">
+      <button type="button" class="tab" role="tab" id="tab-map" aria-controls="panel-map" aria-selected="true" tabindex="0">Map</button>
+      <button type="button" class="tab" role="tab" id="tab-printer" aria-controls="panel-printer" aria-selected="false" tabindex="-1">Printer</button>
+      <button type="button" class="tab" role="tab" id="tab-guides" aria-controls="panel-guides" aria-selected="false" tabindex="-1">Guides</button>
+    </nav>
+    <main class="panels">
+      <section class="panel" role="tabpanel" id="panel-map" aria-labelledby="tab-map"></section>
+      <section class="panel" role="tabpanel" id="panel-printer" aria-labelledby="tab-printer" hidden="hidden"></section>
+      <section class="panel" role="tabpanel" id="panel-guides" aria-labelledby="tab-guides" hidden="hidden"></section>
+    </main>
+  </div>
+  <script src="scripts/widget.js"></script>
+  <script type="module" src="src/app.mjs"></script>
+</body>
+</html>
