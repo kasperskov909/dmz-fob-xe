@@ -40,9 +40,18 @@ export async function init(panelEl) {
 
   const map = L.map(viewport, { crs: L.CRS.Simple, minZoom: -2, maxZoom: 2, zoomSnap: 0.25, attributionControl: false });
   L.control.attribution({ prefix: false }).addAttribution(ATTRIBUTION).addTo(map);
+  let pinBounds = null, touched = false;
+  const refit = () => {
+    if (touched) return;
+    const b = pinBounds ? pinBounds.pad(0.18) : L.latLngBounds(BOUNDS);
+    map._refitting = true;
+    map.fitBounds(b.intersects(BOUNDS) ? b : BOUNDS, { animate: false });
+    map._refitting = false;
+  };
   map.fitBounds(BOUNDS);
+  map.on("dragstart zoomstart", (e) => { if (!map._refitting) touched = true; });
   if (typeof ResizeObserver !== "undefined") {
-    new ResizeObserver(() => { map.invalidateSize(); }).observe(viewport);
+    new ResizeObserver(() => { map.invalidateSize(); refit(); }).observe(viewport);
   }
 
   // Base image with 8 s timeout and error fallback to the local grid.
@@ -66,6 +75,7 @@ export async function init(panelEl) {
   try { [legend, markers] = await Promise.all([loadJson("data/map-legend.json"), loadJson("data/map-markers.json")]); }
   catch (e) { legendEl.textContent = "Map data unavailable."; return; }
 
+  pinBounds = L.latLngBounds(markers.map((m) => [2700 * (1 - m.y / 100), 2880 * m.x / 100]));
   const groups = {};
   const colours = {};
   for (const c of legend) { groups[c.id] = L.layerGroup().addTo(map); colours[c.id] = c.colour; }
@@ -81,6 +91,7 @@ export async function init(panelEl) {
     mk.bindPopup(el("div", "map-popup", m.name + " (" + m.grid + ")" + (m.note ? ": " + m.note : "")));
     g.addLayer(mk);
   }
+  refit();
   for (const c of legend) {
     const b = el("button", "map-chip");
     b.type = "button";
