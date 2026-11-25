@@ -1,0 +1,14 @@
+.printer { overflow-y: auto; }
+.pr-root { display: flex; flex-direction: column; gap: 8px; }
+.pr-search { min-height: 44px; padding: 0 12px; font-size: 16px; }
+.pr-chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.pr-chip { min-height: 44px; min-width: 44px; padding: 0 14px; font-size: 14px; }
+.pr-chip[aria-pressed="true"] { outline: 2px solid currentColor; font-weight: bold; }
+.pr-list, .pr-locs { list-style: none; margin: 0; padding: 0; }
+.pr-list { display: flex; flex-direction: column; gap: 8px; }
+.pr-item { padding: 8px; border: 1px solid rgba(255,255,255,.25); }
+.pr-name { font-weight: bold; }
+.pr-low { margin-left: 8px; padding: 2px 6px; border: 1px dashed currentColor; font-size: 12px; }
+.pr-meta, .pr-used, .pr-count { font-size: 13px; opacity: .8; }
+.pr-source { display: inline-block; min-height: 44px; line-height: 44px; margin-right: 12px; }
+.pr-error { padding: 16px; border: 1px solid #f66; }
