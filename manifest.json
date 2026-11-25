@@ -9,5 +9,6 @@
   "min_app_version": "5.47",
   "os": [{ "platform": "windows" }],
   "supported_devices": [{ "type": "dashboard_lcd" }],
-  "interactive": true
+  "interactive": true,
+  "modules": ["modules/app.mjs", "modules/map.mjs", "modules/printer.mjs", "modules/guides.mjs"]
 }

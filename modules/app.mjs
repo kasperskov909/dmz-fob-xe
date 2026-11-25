@@ -1,8 +1,9 @@
-import { init as initMap } from "./map/map.js";
-import { init as initPrinter } from "./printer/printer.js";
-import { init as initGuides } from "./guides/guides.js";
+import { init as initMap } from "./map.mjs";
+import { init as initPrinter } from "./printer.mjs";
+import { init as initGuides } from "./guides.mjs";
 
-const KEY = "fob.lastTab";
+const uid = typeof uniqueId !== "undefined" && uniqueId ? String(uniqueId) : "local-preview";
+const KEY = "fob.lastTab." + uid;
 const app = document.getElementById("app");
 const tabs = Array.from(document.querySelectorAll('[role="tab"]'));
 
