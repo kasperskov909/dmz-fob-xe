@@ -116,6 +116,9 @@ export async function init(panelEl) {
   try { [legend, markers] = await Promise.all([loadJson("data/map-legend.json"), loadJson("data/map-markers.json")]); }
   catch (e) { legendEl.textContent = "Map data unavailable."; return; }
 
+  if (!Array.isArray(markers)) markers = markers.markers || [];
+  const counts = {};
+  for (const m of markers) counts[m.category] = (counts[m.category] || 0) + 1;
   pinBounds = L.latLngBounds(markers.map((m) => [2700 * (1 - m.y / 100), 2880 * m.x / 100]));
   const groups = {};
   const colours = {};
@@ -123,23 +126,28 @@ export async function init(panelEl) {
   for (const m of markers) {
     const g = groups[m.category];
     if (!g) continue;
+    const isKey = m.category === "key";
+    const sz = isKey ? 16 : 22;
     const icon = L.divIcon({
-      className: "map-pin",
-      html: '<span style="background:' + colours[m.category] + '"></span>',
-      iconSize: [22, 22]
+      className: "map-pin" + (isKey ? " map-pin-key" : ""),
+      html: '<span data-cat="' + m.category + '" style="background:' + colours[m.category] + '"></span>',
+      iconSize: [sz, sz]
     });
     const mk = L.marker([2700 * (1 - m.y / 100), 2880 * m.x / 100], { icon, title: m.name + " (" + m.grid + ")", keyboard: false });
     mk.bindPopup(el("div", "map-popup", m.name + " (" + m.grid + ")" + (m.note ? ": " + m.note : "")));
     g.addLayer(mk);
   }
+  const scalePins = () => { const z = map.getZoom() - map.getMinZoom(); map.getContainer().style.setProperty("--pin-scale", String(Math.min(1.2, Math.max(0.6, 0.6 + z * 0.3)))); };
+  map.on("zoomend", scalePins);
   refit();
+  scalePins();
   for (const c of legend) {
     const b = el("button", "map-chip");
     b.type = "button";
     b.dataset.category = c.id;
     b.setAttribute("aria-pressed", "true");
     const sw = el("span", "map-swatch"); sw.style.background = c.colour;
-    b.append(sw, el("span", "map-chip-label", c.label));
+    b.append(sw, el("span", "map-chip-label", c.label), el("span", "map-chip-count", String(counts[c.id] || 0)));
     b.addEventListener("click", () => {
       const on = b.getAttribute("aria-pressed") !== "true";
       b.setAttribute("aria-pressed", on ? "true" : "false");

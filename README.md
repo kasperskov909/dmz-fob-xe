@@ -54,6 +54,7 @@ Regenerate all nine tab/viewport shots with `npx --yes -p playwright node tools/
 Credits:
 
 - DMZ map: codcentral.net, https://codcentral.net/blog/mw4-dmz-map/. Map imagery belongs to its respective owners.
+- Key pin positions (78 pins, category `key`): grid cell and position taken from codcentral.net (same page) on 2026-11-25, used at the project maintainer's decision, who is clearing it with the site owner. Pin names are our own. The other 16 pins (gun stores, lockers, exfils and so on) are placed and authored by us. `data/map-markers.json` holds 94 pins in total.
 - Printer recipes and item data, from the `sources` list in `data/printer-items.json`:
   - allthings.how, "MW4 DMZ where to find Electronic Sensors and High-Tenacity Fibers": https://allthings.how/mw4-dmz-where-to-find-electronic-sensors-and-high-tenacity-fibers/
   - Gamerfuzion, "MW4 DMZ 3D Printer Guide, first six recipes": https://www.gamerfuzion.com/modern-warfare-4-dmz-3d-printer-crafting-recipes-costs-resources-ingredients/

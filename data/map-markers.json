@@ -1,155 +1,776 @@
-[
+{
+ "_meta": {
+  "keys": "Key pin positions (category key) were taken from codcentral.net/blog/mw4-dmz-map on 2026-11-25. Names are our own. Other pins are authored by the FOB widget authors.",
+  "coordinates": "x,y are percent of the 2880x2700 map image from the left and top edges."
+ },
+ "markers": [
   {
-    "id": "m1",
-    "category": "gunstore",
-    "name": "Gun Store, west village",
-    "grid": "E4",
-    "x": 45,
-    "y": 38.89,
-    "note": "Weapons shop in the western village."
+   "id": "m1",
+   "category": "gunstore",
+   "name": "Gun Store, west village",
+   "grid": "E4",
+   "x": 45,
+   "y": 38.89,
+   "note": "Weapons shop in the western village."
   },
   {
-    "id": "m2",
-    "category": "gunstore",
-    "name": "Gun Store, north wharf",
-    "grid": "I6",
-    "x": 85,
-    "y": 61.11,
-    "note": "Weapons shop on the northern wharf."
+   "id": "m2",
+   "category": "gunstore",
+   "name": "Gun Store, north wharf",
+   "grid": "I6",
+   "x": 85,
+   "y": 61.11,
+   "note": "Weapons shop on the northern wharf."
   },
   {
-    "id": "m3",
-    "category": "wlocker",
-    "name": "Weapons Locker, west",
-    "grid": "D3",
-    "x": 35,
-    "y": 27.78,
-    "note": "Locker cluster near the western ridge."
+   "id": "m3",
+   "category": "wlocker",
+   "name": "Weapons Locker, west",
+   "grid": "D3",
+   "x": 35,
+   "y": 27.78,
+   "note": "Locker cluster near the western ridge."
   },
   {
-    "id": "m4",
-    "category": "wlocker",
-    "name": "Weapons Locker, east",
-    "grid": "H7",
-    "x": 75,
-    "y": 72.22,
-    "note": "Locker cluster in the eastern district."
+   "id": "m4",
+   "category": "wlocker",
+   "name": "Weapons Locker, east",
+   "grid": "H7",
+   "x": 75,
+   "y": 72.22,
+   "note": "Locker cluster in the eastern district."
   },
   {
-    "id": "m5",
-    "category": "bwlocker",
-    "name": "Basic Locker, centre",
-    "grid": "F5",
-    "x": 55,
-    "y": 50,
-    "note": "Basic locker near the middle of the map."
+   "id": "m5",
+   "category": "bwlocker",
+   "name": "Basic Locker, centre",
+   "grid": "F5",
+   "x": 55,
+   "y": 50,
+   "note": "Basic locker near the middle of the map."
   },
   {
-    "id": "m6",
-    "category": "key",
-    "name": "Key spot, south",
-    "grid": "C8",
-    "x": 25,
-    "y": 83.33,
-    "note": "Locked loot area, southern side."
+   "id": "m7",
+   "category": "exfil",
+   "name": "Exfil, north",
+   "grid": "F1",
+   "x": 55,
+   "y": 5.56,
+   "note": "Extraction point at the northern edge."
   },
   {
-    "id": "m7",
-    "category": "exfil",
-    "name": "Exfil, north",
-    "grid": "F1",
-    "x": 55,
-    "y": 5.56,
-    "note": "Extraction point at the northern edge."
+   "id": "m8",
+   "category": "exfil",
+   "name": "Exfil, south",
+   "grid": "G9",
+   "x": 65,
+   "y": 94.44,
+   "note": "Extraction point at the southern edge."
   },
   {
-    "id": "m8",
-    "category": "exfil",
-    "name": "Exfil, south",
-    "grid": "G9",
-    "x": 65,
-    "y": 94.44,
-    "note": "Extraction point at the southern edge."
+   "id": "m9",
+   "category": "printer",
+   "name": "3D Printer, south west",
+   "grid": "B7",
+   "x": 15,
+   "y": 72.22,
+   "note": "Printer location."
   },
   {
-    "id": "m9",
-    "category": "printer",
-    "name": "3D Printer, south west",
-    "grid": "B7",
-    "x": 15,
-    "y": 72.22,
-    "note": "Printer location."
+   "id": "m10",
+   "category": "bounty",
+   "name": "Bounty Station, centre",
+   "grid": "E6",
+   "x": 45,
+   "y": 61.11,
+   "note": "Bounty contract terminal."
   },
   {
-    "id": "m10",
-    "category": "bounty",
-    "name": "Bounty Station, centre",
-    "grid": "E6",
-    "x": 45,
-    "y": 61.11,
-    "note": "Bounty contract terminal."
+   "id": "m11",
+   "category": "safe",
+   "name": "Safe, east",
+   "grid": "J4",
+   "x": 95,
+   "y": 38.89,
+   "note": "Safe location."
   },
   {
-    "id": "m11",
-    "category": "safe",
-    "name": "Safe, east",
-    "grid": "J4",
-    "x": 95,
-    "y": 38.89,
-    "note": "Safe location."
+   "id": "m12",
+   "category": "poi",
+   "name": "Major POI, north east",
+   "grid": "H2",
+   "x": 75,
+   "y": 16.67,
+   "note": "Large point of interest."
   },
   {
-    "id": "m12",
-    "category": "poi",
-    "name": "Major POI, north east",
-    "grid": "H2",
-    "x": 75,
-    "y": 16.67,
-    "note": "Large point of interest."
+   "id": "m13",
+   "category": "fort",
+   "name": "Stronghold, centre east",
+   "grid": "G5",
+   "x": 65,
+   "y": 50,
+   "note": "Fortified area."
   },
   {
-    "id": "m13",
-    "category": "fort",
-    "name": "Stronghold, centre east",
-    "grid": "G5",
-    "x": 65,
-    "y": 50,
-    "note": "Fortified area."
+   "id": "m14",
+   "category": "lt",
+   "name": "Lieutenant, west",
+   "grid": "B3",
+   "x": 15,
+   "y": 27.78,
+   "note": "Lieutenant patrol area."
   },
   {
-    "id": "m14",
-    "category": "lt",
-    "name": "Lieutenant, west",
-    "grid": "B3",
-    "x": 15,
-    "y": 27.78,
-    "note": "Lieutenant patrol area."
+   "id": "m15",
+   "category": "uav",
+   "name": "UAV Tower, north west",
+   "grid": "C2",
+   "x": 25,
+   "y": 16.67,
+   "note": "Radar tower."
   },
   {
-    "id": "m15",
-    "category": "uav",
-    "name": "UAV Tower, north west",
-    "grid": "C2",
-    "x": 25,
-    "y": 16.67,
-    "note": "Radar tower."
+   "id": "m16",
+   "category": "ammo",
+   "name": "Ammo Cache, south east",
+   "grid": "I8",
+   "x": 85,
+   "y": 83.33,
+   "note": "Ammo crates."
   },
   {
-    "id": "m16",
-    "category": "ammo",
-    "name": "Ammo Cache, south east",
-    "grid": "I8",
-    "x": 85,
-    "y": 83.33,
-    "note": "Ammo crates."
+   "id": "m17",
+   "category": "hcache",
+   "name": "Hidden Cache, centre west",
+   "grid": "D6",
+   "x": 35,
+   "y": 61.11,
+   "note": "Concealed stash."
   },
   {
-    "id": "m17",
-    "category": "hcache",
-    "name": "Hidden Cache, centre west",
-    "grid": "D6",
-    "x": 35,
-    "y": 61.11,
-    "note": "Concealed stash."
+   "id": "k01",
+   "category": "key",
+   "name": "Key B3 (1)",
+   "grid": "B3",
+   "x": 20.556,
+   "y": 33.667
+  },
+  {
+   "id": "k02",
+   "category": "key",
+   "name": "Key B3 (2)",
+   "grid": "B3",
+   "x": 19.583,
+   "y": 35.963
+  },
+  {
+   "id": "k03",
+   "category": "key",
+   "name": "Key B3 (3)",
+   "grid": "B3",
+   "x": 20.625,
+   "y": 36.222
+  },
+  {
+   "id": "k04",
+   "category": "key",
+   "name": "Key B3 (4)",
+   "grid": "B3",
+   "x": 21.146,
+   "y": 34.667
+  },
+  {
+   "id": "k05",
+   "category": "key",
+   "name": "Key B3 (5)",
+   "grid": "B3",
+   "x": 20.833,
+   "y": 34.556
+  },
+  {
+   "id": "k06",
+   "category": "key",
+   "name": "Key B5 (1)",
+   "grid": "B5",
+   "x": 15.972,
+   "y": 58.704
+  },
+  {
+   "id": "k07",
+   "category": "key",
+   "name": "Key B5 (2)",
+   "grid": "B5",
+   "x": 17.708,
+   "y": 55.222
+  },
+  {
+   "id": "k08",
+   "category": "key",
+   "name": "Key B5 (3)",
+   "grid": "B5",
+   "x": 13.993,
+   "y": 56.519
+  },
+  {
+   "id": "k09",
+   "category": "key",
+   "name": "Key B6 (1)",
+   "grid": "B6",
+   "x": 15.104,
+   "y": 62.704
+  },
+  {
+   "id": "k10",
+   "category": "key",
+   "name": "Key B6 (2)",
+   "grid": "B6",
+   "x": 15.069,
+   "y": 59.889
+  },
+  {
+   "id": "k11",
+   "category": "key",
+   "name": "Key B6 (3)",
+   "grid": "B6",
+   "x": 15.104,
+   "y": 61.481
+  },
+  {
+   "id": "k12",
+   "category": "key",
+   "name": "Key B7 (1)",
+   "grid": "B7",
+   "x": 17.361,
+   "y": 75.63
+  },
+  {
+   "id": "k13",
+   "category": "key",
+   "name": "Key B7 (2)",
+   "grid": "B7",
+   "x": 21.042,
+   "y": 70.296
+  },
+  {
+   "id": "k14",
+   "category": "key",
+   "name": "Key B7 (3)",
+   "grid": "B7",
+   "x": 18.889,
+   "y": 72.815
+  },
+  {
+   "id": "k15",
+   "category": "key",
+   "name": "Key B7 (4)",
+   "grid": "B7",
+   "x": 18.75,
+   "y": 71.889
+  },
+  {
+   "id": "k16",
+   "category": "key",
+   "name": "Key C2 (1)",
+   "grid": "C2",
+   "x": 29.931,
+   "y": 24.63
+  },
+  {
+   "id": "k17",
+   "category": "key",
+   "name": "Key C2 (2)",
+   "grid": "C2",
+   "x": 27.652,
+   "y": 32.071
+  },
+  {
+   "id": "k18",
+   "category": "key",
+   "name": "Key C3",
+   "grid": "C3",
+   "x": 27.118,
+   "y": 35.889
+  },
+  {
+   "id": "k19",
+   "category": "key",
+   "name": "Key C5 (1)",
+   "grid": "C5",
+   "x": 28.264,
+   "y": 48.704
+  },
+  {
+   "id": "k20",
+   "category": "key",
+   "name": "Key C5 (2)",
+   "grid": "C5",
+   "x": 28.106,
+   "y": 59.343
+  },
+  {
+   "id": "k21",
+   "category": "key",
+   "name": "Key D2 (1)",
+   "grid": "D2",
+   "x": 31.742,
+   "y": 33.418
+  },
+  {
+   "id": "k22",
+   "category": "key",
+   "name": "Key D2 (2)",
+   "grid": "D2",
+   "x": 33.788,
+   "y": 34.007
+  },
+  {
+   "id": "k23",
+   "category": "key",
+   "name": "Key D3",
+   "grid": "D3",
+   "x": 36.076,
+   "y": 28.556
+  },
+  {
+   "id": "k24",
+   "category": "key",
+   "name": "Key D6",
+   "grid": "D6",
+   "x": 36.944,
+   "y": 66.778
+  },
+  {
+   "id": "k25",
+   "category": "key",
+   "name": "Key D8 (1)",
+   "grid": "D8",
+   "x": 38.646,
+   "y": 85.519
+  },
+  {
+   "id": "k26",
+   "category": "key",
+   "name": "Key D8 (2)",
+   "grid": "D8",
+   "x": 37.986,
+   "y": 81.185
+  },
+  {
+   "id": "k27",
+   "category": "key",
+   "name": "Key D8 (3)",
+   "grid": "D8",
+   "x": 37.569,
+   "y": 82.741
+  },
+  {
+   "id": "k28",
+   "category": "key",
+   "name": "Key D8 (4)",
+   "grid": "D8",
+   "x": 37.708,
+   "y": 81.519
+  },
+  {
+   "id": "k29",
+   "category": "key",
+   "name": "Key D8 (5)",
+   "grid": "D8",
+   "x": 34.896,
+   "y": 87.185
+  },
+  {
+   "id": "k30",
+   "category": "key",
+   "name": "Key E4 (1)",
+   "grid": "E4",
+   "x": 49.549,
+   "y": 42.778
+  },
+  {
+   "id": "k31",
+   "category": "key",
+   "name": "Key E4 (2)",
+   "grid": "E4",
+   "x": 49.931,
+   "y": 48.037
+  },
+  {
+   "id": "k32",
+   "category": "key",
+   "name": "Key E4 (3)",
+   "grid": "E4",
+   "x": 45.227,
+   "y": 50.421
+  },
+  {
+   "id": "k33",
+   "category": "key",
+   "name": "Key E5 (1)",
+   "grid": "E5",
+   "x": 48.264,
+   "y": 48.667
+  },
+  {
+   "id": "k34",
+   "category": "key",
+   "name": "Key E5 (2)",
+   "grid": "E5",
+   "x": 45.606,
+   "y": 66.498
+  },
+  {
+   "id": "k35",
+   "category": "key",
+   "name": "Key E7",
+   "grid": "E7",
+   "x": 41.894,
+   "y": 86.364
+  },
+  {
+   "id": "k36",
+   "category": "key",
+   "name": "Key F4 (1)",
+   "grid": "F4",
+   "x": 56.736,
+   "y": 43.889
+  },
+  {
+   "id": "k37",
+   "category": "key",
+   "name": "Key F4 (2)",
+   "grid": "F4",
+   "x": 55.382,
+   "y": 43.333
+  },
+  {
+   "id": "k38",
+   "category": "key",
+   "name": "Key F4 (3)",
+   "grid": "F4",
+   "x": 51.528,
+   "y": 43.556
+  },
+  {
+   "id": "k39",
+   "category": "key",
+   "name": "Key F4 (4)",
+   "grid": "F4",
+   "x": 54.757,
+   "y": 43.815
+  },
+  {
+   "id": "k40",
+   "category": "key",
+   "name": "Key F4 (5)",
+   "grid": "F4",
+   "x": 54.201,
+   "y": 47.778
+  },
+  {
+   "id": "k41",
+   "category": "key",
+   "name": "Key F4 (6)",
+   "grid": "F4",
+   "x": 49.545,
+   "y": 52.189
+  },
+  {
+   "id": "k42",
+   "category": "key",
+   "name": "Key F5 (1)",
+   "grid": "F5",
+   "x": 51.458,
+   "y": 50.815
+  },
+  {
+   "id": "k43",
+   "category": "key",
+   "name": "Key F5 (2)",
+   "grid": "F5",
+   "x": 56.84,
+   "y": 52.222
+  },
+  {
+   "id": "k44",
+   "category": "key",
+   "name": "Key F5 (3)",
+   "grid": "F5",
+   "x": 57.118,
+   "y": 54.63
+  },
+  {
+   "id": "k45",
+   "category": "key",
+   "name": "Key F5 (4)",
+   "grid": "F5",
+   "x": 57.396,
+   "y": 54.741
+  },
+  {
+   "id": "k46",
+   "category": "key",
+   "name": "Key F5 (5)",
+   "grid": "F5",
+   "x": 57.5,
+   "y": 54.556
+  },
+  {
+   "id": "k47",
+   "category": "key",
+   "name": "Key F7 (1)",
+   "grid": "F7",
+   "x": 50.903,
+   "y": 69
+  },
+  {
+   "id": "k48",
+   "category": "key",
+   "name": "Key F7 (2)",
+   "grid": "F7",
+   "x": 58.125,
+   "y": 77.444
+  },
+  {
+   "id": "k49",
+   "category": "key",
+   "name": "Key G5",
+   "grid": "G5",
+   "x": 61.212,
+   "y": 60.185
+  },
+  {
+   "id": "k50",
+   "category": "key",
+   "name": "Key G6 (1)",
+   "grid": "G6",
+   "x": 66.146,
+   "y": 60.667
+  },
+  {
+   "id": "k51",
+   "category": "key",
+   "name": "Key G6 (2)",
+   "grid": "G6",
+   "x": 67.986,
+   "y": 64.889
+  },
+  {
+   "id": "k52",
+   "category": "key",
+   "name": "Key G6 (3)",
+   "grid": "G6",
+   "x": 69.028,
+   "y": 66.185
+  },
+  {
+   "id": "k53",
+   "category": "key",
+   "name": "Key G6 (4)",
+   "grid": "G6",
+   "x": 64.236,
+   "y": 65.185
+  },
+  {
+   "id": "k54",
+   "category": "key",
+   "name": "Key G6 (5)",
+   "grid": "G6",
+   "x": 63.958,
+   "y": 64.333
+  },
+  {
+   "id": "k55",
+   "category": "key",
+   "name": "Key G6 (6)",
+   "grid": "G6",
+   "x": 65.799,
+   "y": 65.667
+  },
+  {
+   "id": "k56",
+   "category": "key",
+   "name": "Key G6 (7)",
+   "grid": "G6",
+   "x": 65.417,
+   "y": 62.481
+  },
+  {
+   "id": "k57",
+   "category": "key",
+   "name": "Key G7 (1)",
+   "grid": "G7",
+   "x": 67.847,
+   "y": 78.556
+  },
+  {
+   "id": "k58",
+   "category": "key",
+   "name": "Key G7 (2)",
+   "grid": "G7",
+   "x": 69.028,
+   "y": 72.037
+  },
+  {
+   "id": "k59",
+   "category": "key",
+   "name": "Key G7 (3)",
+   "grid": "G7",
+   "x": 68.056,
+   "y": 78.889
+  },
+  {
+   "id": "k60",
+   "category": "key",
+   "name": "Key G7 (4)",
+   "grid": "G7",
+   "x": 64.028,
+   "y": 76.519
+  },
+  {
+   "id": "k61",
+   "category": "key",
+   "name": "Key G7 (5)",
+   "grid": "G7",
+   "x": 63.785,
+   "y": 75.222
+  },
+  {
+   "id": "k62",
+   "category": "key",
+   "name": "Key G7 (6)",
+   "grid": "G7",
+   "x": 67.222,
+   "y": 78.963
+  },
+  {
+   "id": "k63",
+   "category": "key",
+   "name": "Key G8",
+   "grid": "G8",
+   "x": 60.069,
+   "y": 79.926
+  },
+  {
+   "id": "k64",
+   "category": "key",
+   "name": "Key H4 (1)",
+   "grid": "H4",
+   "x": 78.646,
+   "y": 40.778
+  },
+  {
+   "id": "k65",
+   "category": "key",
+   "name": "Key H4 (2)",
+   "grid": "H4",
+   "x": 78.924,
+   "y": 41.481
+  },
+  {
+   "id": "k66",
+   "category": "key",
+   "name": "Key H4 (3)",
+   "grid": "H4",
+   "x": 77.778,
+   "y": 44.926
+  },
+  {
+   "id": "k67",
+   "category": "key",
+   "name": "Key H5",
+   "grid": "H5",
+   "x": 72.118,
+   "y": 58.593
+  },
+  {
+   "id": "k68",
+   "category": "key",
+   "name": "Key H6 (1)",
+   "grid": "H6",
+   "x": 71.84,
+   "y": 62.778
+  },
+  {
+   "id": "k69",
+   "category": "key",
+   "name": "Key H6 (2)",
+   "grid": "H6",
+   "x": 69.688,
+   "y": 62.259
+  },
+  {
+   "id": "k70",
+   "category": "key",
+   "name": "Key H6 (3)",
+   "grid": "H6",
+   "x": 74.514,
+   "y": 62.852
+  },
+  {
+   "id": "k71",
+   "category": "key",
+   "name": "Key H7 (1)",
+   "grid": "H7",
+   "x": 73.472,
+   "y": 73.111
+  },
+  {
+   "id": "k72",
+   "category": "key",
+   "name": "Key H7 (2)",
+   "grid": "H7",
+   "x": 69.479,
+   "y": 68.963
+  },
+  {
+   "id": "k73",
+   "category": "key",
+   "name": "Key H7 (3)",
+   "grid": "H7",
+   "x": 70.625,
+   "y": 69.593
+  },
+  {
+   "id": "k74",
+   "category": "key",
+   "name": "Key I4",
+   "grid": "I4",
+   "x": 81.25,
+   "y": 40.667
+  },
+  {
+   "id": "k75",
+   "category": "key",
+   "name": "Key I5",
+   "grid": "I5",
+   "x": 81.25,
+   "y": 50.593
+  },
+  {
+   "id": "k76",
+   "category": "key",
+   "name": "Key I6",
+   "grid": "I6",
+   "x": 79.931,
+   "y": 66.963
+  },
+  {
+   "id": "k77",
+   "category": "key",
+   "name": "Key I7 (1)",
+   "grid": "I7",
+   "x": 80.833,
+   "y": 68.889
+  },
+  {
+   "id": "k78",
+   "category": "key",
+   "name": "Key I7 (2)",
+   "grid": "I7",
+   "x": 80.417,
+   "y": 76.148
   }
-]
+ ]
+}

@@ -37,3 +37,11 @@
   .map-chip-label { overflow-wrap: normal; word-break: normal; }
   .map-side { overflow-y: auto; }
 }
+
+.map-chip[data-category="key"] { grid-column: 1 / -1; border-color: #E8C15A; background: color-mix(in srgb, #E8C15A 18%, var(--surface)); font-size: 22px; min-height: 60px; }
+.map-chip[data-category="key"][aria-pressed="false"] { background: transparent; }
+.map-chip[data-category="key"]::after { color: #E8C15A; }
+.map-chip[data-category="key"] .map-swatch { width: 22px; height: 22px; border-radius: 50%; border: 3px solid #fff; box-sizing: border-box; }
+.map-pin-key span { width: 12px; height: 12px; margin: 2px; border: 2px solid #1a1a1a; box-shadow: 0 0 0 1.5px #fff; }
+@media (orientation: portrait) { .map-chip[data-category="key"] { min-height: 84px; font-size: 26px; } }
+.map-pin span { transform: scale(var(--pin-scale, 1)); }
