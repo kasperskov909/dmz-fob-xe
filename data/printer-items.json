@@ -1,0 +1,707 @@
+{
+ "version": 1,
+ "updated": "2026-11-25",
+ "methodology": "Compiled from public MW4 DMZ guides via web search and fetch. Recipe data from Gaming ProMax; POI-level locations from allthings.how and games.gg; rarity tiers from Gaming ProMax and Gamerfuzion. Entries with only generic tier-level location text, or a single weak source, are marked confidence low. The Destructoid page returned 403, so its entry relies on a search-result summary. Not verified in game. Control Units, Nitro Compounds, Regional Combat Notes and others had no location data found and are omitted.",
+ "sources": [
+  {
+   "id": "allthings",
+   "title": "allthings.how: MW4 DMZ where to find Electronic Sensors and High-Tenacity Fibers",
+   "url": "https://allthings.how/mw4-dmz-where-to-find-electronic-sensors-and-high-tenacity-fibers/"
+  },
+  {
+   "id": "gamerfuzion",
+   "title": "Gamerfuzion: MW4 DMZ 3D Printer Guide, first six recipes",
+   "url": "https://www.gamerfuzion.com/modern-warfare-4-dmz-3d-printer-crafting-recipes-costs-resources-ingredients/"
+  },
+  {
+   "id": "gamingpromax",
+   "title": "Gaming ProMax: MW4 DMZ all 3D printer recipes",
+   "url": "https://gamingpromax.com/modern-warfare-4-dmz-all-3d-printer-recipes/"
+  },
+  {
+   "id": "gamesgg",
+   "title": "games.gg: How to print legendary materials in X01",
+   "url": "https://games.gg/call-of-duty-modern-warfare-4/guides/how-to-print-legendary-materials-in-x01/"
+  },
+  {
+   "id": "destructoid",
+   "title": "Destructoid: where to find comms modules in MW4 DMZ (search-result summary; page returned 403 to direct fetch)",
+   "url": "https://www.destructoid.com/where-to-find-comms-modules-in-call-of-duty-modern-warfare-4-dmz/"
+  }
+ ],
+ "items": [
+  {
+   "id": "synthetics",
+   "name": "Synthetics",
+   "category": "resource",
+   "rarity": "common",
+   "locations": [
+    {
+     "area": "Map-wide",
+     "detail": "Crates, shelves, drawers and ground loot, especially civilian buildings, warehouses, outposts; general guidance only"
+    }
+   ],
+   "used_in": [
+    "Bandage",
+    "1-Plate Armor Vest",
+    "Small Backpack",
+    "Biomaterials",
+    "Rigid Synthetics",
+    "Electronic Sensors"
+   ],
+   "source_ids": [
+    "gamingpromax",
+    "gamerfuzion"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "chemicals",
+   "name": "Chemicals",
+   "category": "resource",
+   "rarity": "common",
+   "locations": [
+    {
+     "area": "Map-wide",
+     "detail": "Crates, shelves, drawers and ground loot, especially civilian buildings, warehouses, outposts; general guidance only"
+    }
+   ],
+   "used_in": [
+    "Bandage",
+    "Medkit",
+    "Energy Drink",
+    "Detonators",
+    "Biomaterials",
+    "Reactive Metals"
+   ],
+   "source_ids": [
+    "gamingpromax",
+    "gamerfuzion"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "metals",
+   "name": "Metals",
+   "category": "resource",
+   "rarity": "common",
+   "locations": [
+    {
+     "area": "Map-wide",
+     "detail": "Crates, shelves, drawers and ground loot, especially civilian buildings, warehouses, outposts; general guidance only"
+    }
+   ],
+   "used_in": [
+    "1-Plate Armor Vest",
+    "C4",
+    "Claymore",
+    "Control Unit",
+    "Reactive Metals",
+    "Rigid Synthetics"
+   ],
+   "source_ids": [
+    "gamingpromax",
+    "gamerfuzion"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "electronics",
+   "name": "Electronics",
+   "category": "resource",
+   "rarity": "common",
+   "locations": [
+    {
+     "area": "Map-wide",
+     "detail": "Crates, shelves, drawers and ground loot, especially civilian buildings, warehouses, outposts; general guidance only"
+    }
+   ],
+   "used_in": [
+    "Pain Killers",
+    "Defibrillator",
+    "DDOS",
+    "Control Unit",
+    "Detonators",
+    "Comms Module"
+   ],
+   "source_ids": [
+    "gamingpromax",
+    "gamerfuzion"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "biomaterials",
+   "name": "Biomaterials",
+   "category": "3D printer ingredient",
+   "rarity": "uncommon",
+   "locations": [
+    {
+     "area": "Map-wide",
+     "detail": "Supply crates, locked rooms, military structures (general)"
+    },
+    {
+     "area": "Hospitals",
+     "detail": "One guide lists hospitals and chemical lockers; single source, low detail"
+    }
+   ],
+   "used_in": [
+    "Medkit",
+    "Radiation Blockers",
+    "Self Revive Kit",
+    "Durable Gas Mask",
+    "Uncommon Ingredient Printing",
+    "Dog Tag Case Upgrade I"
+   ],
+   "source_ids": [
+    "gamingpromax",
+    "gamerfuzion"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "reactive-metals",
+   "name": "Reactive Metals",
+   "category": "3D printer ingredient",
+   "rarity": "uncommon",
+   "locations": [
+    {
+     "area": "Map-wide",
+     "detail": "Supply crates, locked rooms, military structures (general)"
+    }
+   ],
+   "used_in": [
+    "2-Plate Armor Vest",
+    "Armor Box",
+    "Stash Weapon Upgrade I",
+    "Gunsmith Upgrade I"
+   ],
+   "source_ids": [
+    "gamingpromax",
+    "gamerfuzion"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "rigid-synthetics",
+   "name": "Rigid Synthetics",
+   "category": "3D printer ingredient",
+   "rarity": "uncommon",
+   "locations": [
+    {
+     "area": "Map-wide",
+     "detail": "Supply crates, locked rooms, military structures (general)"
+    }
+   ],
+   "used_in": [
+    "Medium Backpack",
+    "Care Package",
+    "Gas Mask",
+    "Stash Item Upgrade I",
+    "Large Backpack"
+   ],
+   "source_ids": [
+    "gamingpromax",
+    "gamerfuzion"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "detonators",
+   "name": "Detonators",
+   "category": "3D printer ingredient",
+   "rarity": "uncommon",
+   "locations": [
+    {
+     "area": "Map-wide",
+     "detail": "Supply crates, locked rooms, military structures (general)"
+    },
+    {
+     "area": "FOB printer",
+     "detail": "Can be printed in the Uncommon Ingredients tab for 20 Electronics and 20 Chemicals"
+    }
+   ],
+   "used_in": [
+    "Smelling Salts",
+    "DDOS",
+    "SAM Airburst Turret",
+    "Revive Pistol",
+    "Artillery Beacon",
+    "Impact Warhead"
+   ],
+   "source_ids": [
+    "gamingpromax"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "electronic-sensors",
+   "name": "Electronic Sensors",
+   "category": "3D printer ingredient",
+   "rarity": "uncommon",
+   "locations": [
+    {
+     "area": "Cheongun Village (grid F4)",
+     "detail": "Grey IT Bag on a desk in the ground-floor office with a glass partition, building immediately west of D50 Radar; same bag holds a CPU"
+    },
+    {
+     "area": "Map-wide",
+     "detail": "Supply crates, locked rooms, military structures (general)"
+    }
+   ],
+   "used_in": [
+    "Spotter Scope",
+    "UAV",
+    "Advanced UAV",
+    "Recon Drone",
+    "Stash Item Upgrade I",
+    "Elite Night Vision Goggles"
+   ],
+   "source_ids": [
+    "allthings",
+    "gamingpromax"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "high-tenacity-fibers",
+   "name": "High-Tenacity Fibers",
+   "category": "3D printer ingredient",
+   "rarity": "rare",
+   "locations": [
+    {
+     "area": "Hajin City (grid F8)",
+     "detail": "Blue Duffel in the back corner of the barber shop, beside a dark bench seat; south of Wolves Stadium / Hajin River Heights"
+    },
+    {
+     "area": "Map-wide",
+     "detail": "Named locations, boss drops, locked containers (general); no specific POI found"
+    }
+   ],
+   "used_in": [
+    "Durable Gas Mask",
+    "Large Scavenger Backpack",
+    "Medium Weapon Backpack",
+    "Ballistic Fabric",
+    "Uncommon Ingredient Printing"
+   ],
+   "source_ids": [
+    "allthings",
+    "gamingpromax"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "cpu",
+   "name": "CPU",
+   "category": "3D printer ingredient",
+   "rarity": "rare",
+   "locations": [
+    {
+     "area": "Cheongun Village (grid F4)",
+     "detail": "Same grey IT Bag as the Electronic Sensors"
+    },
+    {
+     "area": "X01",
+     "detail": "Computers and tech bags, including offices and server rooms"
+    }
+   ],
+   "used_in": [
+    "Defibrillator",
+    "Combat Drone",
+    "Gunsmith Upgrade I",
+    "Comms Module",
+    "Prototype RF Module",
+    "Elite Night Vision Goggles"
+   ],
+   "source_ids": [
+    "allthings",
+    "gamesgg",
+    "gamingpromax"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "binding-catalyst",
+   "name": "Binding Catalyst",
+   "category": "3D printer ingredient",
+   "rarity": "rare",
+   "locations": [
+    {
+     "area": "Tong-il Village",
+     "detail": "Chemical storage"
+    },
+    {
+     "area": "Chang-san Air Base",
+     "detail": "Chemical storage"
+    }
+   ],
+   "used_in": [
+    "Medkit",
+    "Self Revive Kit",
+    "Revive Pistol",
+    "Stabilized Reagents",
+    "Experimental Compound",
+    "Epic Ingredient Printing"
+   ],
+   "source_ids": [
+    "gamesgg",
+    "gamingpromax",
+    "gamerfuzion"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "printed-circuit-board",
+   "name": "Printed Circuit Boards",
+   "category": "3D printer ingredient",
+   "rarity": "rare",
+   "locations": [
+    {
+     "area": "Map-wide",
+     "detail": "Named locations, boss drops, locked containers (general); no specific POI found"
+    }
+   ],
+   "used_in": [
+    "Night Vision Goggles",
+    "Power Regulator",
+    "Epic Ingredient Printing",
+    "Vendor Item Upgrade I"
+   ],
+   "source_ids": [
+    "gamingpromax"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "stock-rods",
+   "name": "Stock Rods",
+   "category": "3D printer ingredient",
+   "rarity": "rare",
+   "locations": [
+    {
+     "area": "Map-wide",
+     "detail": "Named locations, boss drops, locked containers (general); no specific POI found"
+    }
+   ],
+   "used_in": [
+    "Bomb Glider",
+    "Door Breacher Charge",
+    "Turned Components",
+    "Stash Weapon Upgrade I"
+   ],
+   "source_ids": [
+    "gamingpromax"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "military-composites",
+   "name": "Military Composites",
+   "category": "3D printer ingredient",
+   "rarity": "legendary",
+   "locations": [
+    {
+     "area": "X01 printer",
+     "detail": "Printed at Production Assembly (western mezzanine, grid E5) from 2 Nylon Laminate + 5 Nylon Cloth"
+    },
+    {
+     "area": "Colossus Commander",
+     "detail": "Alternative drop"
+    }
+   ],
+   "used_in": [
+    "Tempered Armor Vest",
+    "Secure Scavenger Backpack",
+    "Epic Ingredient Printing"
+   ],
+   "source_ids": [
+    "gamesgg",
+    "gamingpromax"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "experimental-compound",
+   "name": "Experimental Compound",
+   "category": "legendary ingredient (X01)",
+   "rarity": "legendary",
+   "locations": [
+    {
+     "area": "X01 printer",
+     "detail": "2 Volatile Explosives + 5 Binding Catalyst"
+    },
+    {
+     "area": "Commanders / Imjin Farmland",
+     "detail": "Occasional commander drops; possible ground loot in Imjin Farmland, not guaranteed"
+    }
+   ],
+   "used_in": [
+    "3-Plate Ballistic Gel Vest",
+    "Door Breacher Charge"
+   ],
+   "source_ids": [
+    "gamesgg",
+    "gamingpromax"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "nano-structured-alloy",
+   "name": "Nano-Structured Alloy",
+   "category": "legendary ingredient (X01)",
+   "rarity": "legendary",
+   "locations": [
+    {
+     "area": "X01 printer",
+     "detail": "2 Turned Components + 5 Structural Alloy"
+    },
+    {
+     "area": "NK Battle Tank Commander",
+     "detail": "Alternative drop"
+    }
+   ],
+   "used_in": [
+    "3-Plate Helmet Armor Vest"
+   ],
+   "source_ids": [
+    "gamesgg",
+    "gamingpromax"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "prototype-rf-module",
+   "name": "Prototype RF Module",
+   "category": "legendary ingredient (X01)",
+   "rarity": "legendary",
+   "locations": [
+    {
+     "area": "X01 printer",
+     "detail": "2 Power Regulator + 5 CPU"
+    },
+    {
+     "area": "Deathstalker Commander",
+     "detail": "Alternative drop"
+    }
+   ],
+   "used_in": [
+    "Fulton Drop Marker",
+    "Crossfire",
+    "Large Secure Backpack",
+    "Vendor Item Upgrade I"
+   ],
+   "source_ids": [
+    "gamesgg",
+    "gamingpromax"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "comms-module",
+   "name": "Comms Module",
+   "category": "refined component",
+   "rarity": "unknown",
+   "locations": [
+    {
+     "area": "Deadtown (east)",
+     "detail": "Computers on top floors of buildings east of Deadtown"
+    },
+    {
+     "area": "Cheonwang Peak Array",
+     "detail": "Computers and physical servers"
+    },
+    {
+     "area": "The Grid, Netshin Tech Complex",
+     "detail": "Computers and physical servers"
+    },
+    {
+     "area": "FOB printer",
+     "detail": "Craftable: 100 Electronics + 3 CPUs"
+    }
+   ],
+   "used_in": [
+    "Uncommon Ingredient Printing",
+    "Stash Weapon Upgrade I",
+    "Fulton Drop Marker",
+    "Advanced UAV"
+   ],
+   "source_ids": [
+    "destructoid",
+    "gamingpromax"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "nylon-laminate",
+   "name": "Nylon Laminate",
+   "category": "refined component",
+   "rarity": "unknown",
+   "locations": [
+    {
+     "area": "Citadel",
+     "detail": "Main building wings"
+    },
+    {
+     "area": "Deadtown",
+     "detail": "Underground holding area"
+    },
+    {
+     "area": "Heavenly Luck Casino",
+     "detail": "Mujin Nightclub"
+    }
+   ],
+   "used_in": [
+    "Military Composites",
+    "Large Backpack",
+    "Large Scavenger Backpack",
+    "Secure Scavenger Backpack"
+   ],
+   "source_ids": [
+    "gamesgg",
+    "gamingpromax"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "nylon-cloth",
+   "name": "Nylon Cloth",
+   "category": "3D printer ingredient",
+   "rarity": "unknown",
+   "locations": [
+    {
+     "area": "Unknown",
+     "detail": "No location found; source says an in-game Ingredient Locations hint exists in the recipe menu"
+    }
+   ],
+   "used_in": [
+    "Military Composites",
+    "Medium Scavenger Backpack",
+    "Nylon Laminate",
+    "Parachute"
+   ],
+   "source_ids": [
+    "gamesgg",
+    "gamingpromax"
+   ],
+   "confidence": "low"
+  },
+  {
+   "id": "structural-alloy",
+   "name": "Structural Alloy",
+   "category": "3D printer ingredient",
+   "rarity": "unknown",
+   "locations": [
+    {
+     "area": "Chang-san Air Base",
+     "detail": "Hangar and repair bay"
+    },
+    {
+     "area": "Bubun Yard",
+     "detail": "Listed as a source"
+    }
+   ],
+   "used_in": [
+    "Nano-Structured Alloy",
+    "Large Backpack",
+    "Small Secure Backpack",
+    "UAV",
+    "Alloyed Plating"
+   ],
+   "source_ids": [
+    "gamesgg",
+    "gamingpromax"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "turned-components",
+   "name": "Turned Components",
+   "category": "refined component",
+   "rarity": "unknown",
+   "locations": [
+    {
+     "area": "Imjin Farmland",
+     "detail": "Rice mill"
+    },
+    {
+     "area": "Hajin City",
+     "detail": "Construction zone"
+    },
+    {
+     "area": "Namjjog Station",
+     "detail": "Listed as a source"
+    }
+   ],
+   "used_in": [
+    "Nano-Structured Alloy",
+    "Parachute",
+    "Impact Warhead"
+   ],
+   "source_ids": [
+    "gamesgg",
+    "gamingpromax"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "volatile-explosives",
+   "name": "Volatile Explosives",
+   "category": "refined component",
+   "rarity": "unknown",
+   "locations": [
+    {
+     "area": "NuriGO Mall",
+     "detail": "DRC lab"
+    },
+    {
+     "area": "Citadel",
+     "detail": "Prison Yard chemical buildings"
+    },
+    {
+     "area": "Imjin Farmland",
+     "detail": "Storage tents"
+    }
+   ],
+   "used_in": [
+    "Experimental Compound",
+    "Door Breacher Charge",
+    "Artillery Beacon",
+    "Crossfire"
+   ],
+   "source_ids": [
+    "gamesgg",
+    "gamingpromax"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "power-regulator",
+   "name": "Power Regulator",
+   "category": "refined component",
+   "rarity": "unknown",
+   "locations": [
+    {
+     "area": "Haneul Nuclear Reactor",
+     "detail": "Bring radiation protection"
+    },
+    {
+     "area": "Electrical substations",
+     "detail": "Listed as a source"
+    }
+   ],
+   "used_in": [
+    "Prototype RF Module",
+    "Revive Pistol",
+    "Railgun Sentry",
+    "Elite Night Vision Goggles",
+    "Gunsmith Upgrade I"
+   ],
+   "source_ids": [
+    "gamesgg",
+    "gamingpromax"
+   ],
+   "confidence": "medium"
+  }
+ ]
+}
