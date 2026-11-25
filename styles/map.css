@@ -27,3 +27,13 @@
   .map-chip { font-size: 22px; min-height: 72px; padding: 0 14px; }
   .map-swatch { width: 22px; height: 22px; }
 }
+.leaflet-touch .leaflet-bar a, .leaflet-bar a { width: 48px; height: 48px; line-height: 48px; font-size: 26px; }
+.leaflet-control-attribution a { position: relative; }
+.leaflet-control-attribution a::after { content: ""; position: absolute; left: -6px; right: -6px; top: 50%; height: 44px; transform: translateY(-50%); }
+.map-chip-label { word-break: normal; overflow-wrap: normal; hyphens: none; }
+@media (max-width: 400px) {
+  .map-chip { font-size: 15px; padding: 0 8px; gap: 6px; }
+  .map-chip::after { font-size: 15px; }
+  .map-chip-label { overflow-wrap: normal; word-break: normal; }
+  .map-side { overflow-y: auto; }
+}

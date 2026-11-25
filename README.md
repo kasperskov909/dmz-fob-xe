@@ -13,9 +13,9 @@ A Corsair iCUE widget for the XENEON EDGE touch display that shows Call of Duty:
 Official docs: https://docs.elgato.com/icue/widgets/ (Widget API). Details are summarized in `docs/research/icue-widget-conventions.md`.
 
 1. Install iCUE 5.47 or later (use 5.47 to be safe) and have a XENEON EDGE connected.
-2. Install the packaging CLI (needs Node and npm): `npm install -g icuewidget-cli`
-3. Validate the widget folder: `icuewidget validate <widget-dir>`
-4. Package it: `icuewidget package <widget-dir>`. This writes `<name>.icuewidget`.
+2. Make sure Node and npm are installed (the CLI is fetched on demand through `npx`).
+3. Build the package with `node tools/package.mjs [output-path]`. It copies only the runtime files (`index.html`, `manifest.json`, `translation.json`, `modules/`, `scripts/`, `styles/`, `resources/`, `assets/`, `data/`, `vendor/`) to a clean temp folder, runs `npx --yes icuewidget-cli validate`, then `npx --yes icuewidget-cli package`. The default output is `dist/dmz-fob.icuewidget` (about 215 KB). Do not package the repo root directly: it would include docs and screenshots.
+4. Validation runs as part of that script. To check the repo root alone: `npx --yes icuewidget-cli validate .`
 5. Open iCUE, go to the Widgets panel, click "+" and select the `.icuewidget` file (or double-click the file).
 6. The widget now appears for supported devices. Add it to a XENEON EDGE slot and test on the real hardware, since browser preview can differ from the device.
 
@@ -23,7 +23,7 @@ Network access (fetch) needs matching `permissions` entries in `manifest.json`. 
 
 ## Local preview
 
-No official preview tool exists. Serve the widget folder with a stub for `iCUE`, `icueEvents`, `iCUE_initialized` and `device`, then resize the browser between 2560x720 and 720x2560:
+No official preview tool exists. Opening `index.html` by double-click (file://) does not work, because ES modules and data fetches need HTTP. Serve the widget folder with a stub for `iCUE`, `icueEvents`, `iCUE_initialized` and `device`, then resize the browser between 2560x720 and 720x2560:
 
 ```
 npx serve <widget-dir>

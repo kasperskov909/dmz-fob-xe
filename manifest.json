@@ -4,7 +4,7 @@
   "name": "DMZ Fob",
   "description": "Tactical dashboard with map, printer and guides tabs",
   "version": "1.0.0",
-  "preview_icon": "resources/icon.svg",
+  "preview_icon": "resources/preview.png",
   "min_framework_version": "1.0.0",
   "min_app_version": "5.47",
   "os": [
