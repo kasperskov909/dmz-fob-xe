@@ -55,6 +55,7 @@ export async function init(panelEl) {
     const li = el("li", "pr-item");
     li.dataset.id = it.id;
     li.dataset.confidence = it.confidence || "";
+    li.dataset.rarity = it.rarity || "unknown";
     const head = el("div", "pr-head");
     head.appendChild(el("span", "pr-name", it.name));
     if (it.confidence === "low") {
