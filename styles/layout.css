@@ -1,0 +1,23 @@
+#app { display: flex; flex-direction: row; width: 100%; height: 100%; padding: var(--gap); gap: var(--gap); }
+.tabs { display: flex; flex-direction: column; flex: none; width: 220px; gap: var(--gap); padding: 6px; }
+.tab { position: relative; flex: 1; display: flex; align-items: center; justify-content: center; background: var(--surface); border: 2px solid var(--border); border-radius: var(--radius); color: var(--text-dim); font-size: var(--fs-tab); font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; min-height: max(64px, var(--tab-size)); min-width: 160px; padding: 0 28px; cursor: pointer; }
+.tab::before { content: ""; position: absolute; left: 10px; top: 50%; width: 6px; height: 36px; transform: translateY(-50%); border-radius: 3px; background: transparent; }
+.tab[aria-selected="true"] { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); box-shadow: 0 0 0 2px var(--bg), 0 0 0 4px var(--accent); }
+.tab[aria-selected="true"]::before { background: var(--accent-ink); }
+.tab:active { background: var(--surface-2); }
+.tab[aria-selected="true"]:active { background: var(--accent); }
+.tab:focus-visible { outline: 3px solid var(--warn); outline-offset: 4px; }
+.panels { flex: 1; min-width: 0; min-height: 0; display: flex; }
+.panel { flex: 1; min-width: 0; min-height: 0; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: var(--gap); overflow: auto; }
+@media (orientation: portrait) {
+  #app { flex-direction: column; }
+  .tabs { flex-direction: row; width: auto; }
+  .tab::before { left: 50%; top: 8px; width: 36px; height: 6px; transform: translateX(-50%); }
+  .tab { padding-top: 10px; }
+}
+@media (orientation: portrait) and (max-width: 520px) {
+  .tab { min-width: 0; padding-left: 8px; padding-right: 8px; font-size: 24px; }
+}
+@media (max-width: 400px) {
+  .tab { font-size: 17px; letter-spacing: 0.02em; padding-left: 4px; padding-right: 4px; }
+}
