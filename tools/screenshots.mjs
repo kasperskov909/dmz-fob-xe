@@ -1,5 +1,6 @@
 // Acceptance screenshot pass. Serves the repo root, captures each tab at each viewport
-// into docs/screenshots/<tab>-<w>x<h>.png.
+// into docs/screenshots/<tab>-<w>x<h>.png,
+// plus map-open-<w>x<h>.png (Map tab with the info sheet open).
 // Run: npx --yes -p playwright node tools/screenshots.mjs
 //   (or: npm i -D playwright && npx playwright install chromium && node tools/screenshots.mjs)
 // Playwright is resolved from the local node_modules, else from NODE_PATH / the npx cache.
@@ -63,6 +64,15 @@ try {
       await page.waitForTimeout(800);
       await page.screenshot({ path: path.join(out, `${tab}-${w}x${h}.png`) });
       console.log(`${tab}-${w}x${h}.png${tab === "map" ? " (map mode: " + mode + ")" : ""}`);
+      if (tab === "map") {
+        // Sheet open on the F5 Hospital Chemical Lockers pin (a key pin with rarity and description).
+        await page.locator('[aria-label="Hospital Chemical Lockers, grid F5"]').dispatchEvent("click");
+        await page.waitForTimeout(1200);
+        await page.screenshot({ path: path.join(out, `map-open-${w}x${h}.png`) });
+        console.log(`map-open-${w}x${h}.png`);
+        await page.keyboard.press("Escape");
+        await page.waitForTimeout(400);
+      }
     }
     await page.close();
   }

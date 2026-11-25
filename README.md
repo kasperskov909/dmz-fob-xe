@@ -4,7 +4,7 @@ A Corsair iCUE widget for the XENEON EDGE touch display that shows Call of Duty:
 
 ## Features
 
-- **Map**: the DMZ map, taken from codcentral.net.
+- **Map**: the DMZ map, taken from codcentral.net. Round icon pins per category (our own inline SVG icons), key pins coloured per rarity (Uncommon, Rare, Epic, Legendary, Ultra, Unknown; dashed border = unverified) with a rarity colour key under the Keys legend chip. Tapping a pin centres it and opens a collapsible info sheet over the map (name, layer, grid, rarity, verified tag, description). Escape, the close button or tapping empty map closes it.
 - **Printer**: 3D printer recipes and ingredient costs, read from `data/printer-items.json`.
 - **Guides**: placeholder tab. No guide content ships yet.
 
@@ -14,7 +14,7 @@ Official docs: https://docs.elgato.com/icue/widgets/ (Widget API). Details are s
 
 1. Install iCUE 5.47 or later (use 5.47 to be safe) and have a XENEON EDGE connected.
 2. Make sure Node and npm are installed (the CLI is fetched on demand through `npx`).
-3. Build the package with `node tools/package.mjs [output-path]`. It copies only the runtime files (`index.html`, `manifest.json`, `translation.json`, `modules/`, `scripts/`, `styles/`, `resources/`, `assets/`, `data/`, `vendor/`) to a clean temp folder, runs `npx --yes icuewidget-cli validate`, then `npx --yes icuewidget-cli package`. The default output is `dist/dmz-fob.icuewidget` (about 215 KB). Do not package the repo root directly: it would include docs and screenshots.
+3. Build the package with `node tools/package.mjs [output-path]`. It copies only the runtime files (`index.html`, `manifest.json`, `translation.json`, `modules/`, `scripts/`, `styles/`, `resources/`, `assets/`, `data/`, `vendor/`) to a clean temp folder, runs `npx --yes icuewidget-cli validate`, then `npx --yes icuewidget-cli package`. The default output is `dist/dmz-fob.icuewidget` (about 288 KB). Do not package the repo root directly: it would include docs and screenshots.
 4. Validation runs as part of that script. To check the repo root alone: `npx --yes icuewidget-cli validate .`
 5. Open iCUE, go to the Widgets panel, click "+" and select the `.icuewidget` file (or double-click the file).
 6. The widget now appears for supported devices. Add it to a XENEON EDGE slot and test on the real hardware, since browser preview can differ from the device.
@@ -47,14 +47,21 @@ Map tab at 2560x720, 1280x720 and 720x2560:
 ![Map 1280x720](docs/screenshots/map-1280x720.png)
 ![Map 720x2560](docs/screenshots/map-720x2560.png)
 
-Regenerate all nine tab/viewport shots with `npx --yes -p playwright node tools/screenshots.mjs` (see `tools/screenshots.mjs`).
+Map tab with the info sheet open on the F5 Hospital Chemical Lockers pin:
+
+![Map open 2560x720](docs/screenshots/map-open-2560x720.png)
+![Map open 1280x720](docs/screenshots/map-open-1280x720.png)
+![Map open 720x2560](docs/screenshots/map-open-720x2560.png)
+
+Regenerate all tab/viewport shots (nine, plus three map-open) with `npx --yes -p playwright node tools/screenshots.mjs` (see `tools/screenshots.mjs`).
 
 ## Data sources and Credits
 
 Credits:
 
+- Icons: all map and legend icons are our own inline SVG drawings (`modules/map-icons.mjs`), not the site's art.
 - DMZ map: codcentral.net, https://codcentral.net/blog/mw4-dmz-map/. Map imagery belongs to its respective owners.
-- Key pin positions (78 pins, category `key`): grid cell and position taken from codcentral.net (same page) on 2026-11-25, used at the project maintainer's decision, who is clearing it with the site owner. Pin names are our own. The other 16 pins (gun stores, lockers, exfils and so on) are placed and authored by us. `data/map-markers.json` holds 94 pins in total.
+- Key pin positions (78 pins, category `key`): grid cell and position taken from codcentral.net (same page) on 2026-11-25, used at the project maintainer's decision, who is clearing it with the site owner. Key names, descriptions, rarities and verified flags are also taken from codcentral.net (same page, same clearance status); the unverified note and the extra detail lines are our own wording. The other 16 pins (gun stores, lockers, exfils and so on) are placed and authored by us. `data/map-markers.json` holds 94 pins in total.
 - Printer recipes and item data, from the `sources` list in `data/printer-items.json`:
   - allthings.how, "MW4 DMZ where to find Electronic Sensors and High-Tenacity Fibers": https://allthings.how/mw4-dmz-where-to-find-electronic-sensors-and-high-tenacity-fibers/
   - Gamerfuzion, "MW4 DMZ 3D Printer Guide, first six recipes": https://www.gamerfuzion.com/modern-warfare-4-dmz-3d-printer-crafting-recipes-costs-resources-ingredients/
