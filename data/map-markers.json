@@ -1,0 +1,155 @@
+[
+  {
+    "id": "m1",
+    "category": "gunstore",
+    "name": "Gun Store, west village",
+    "grid": "E4",
+    "x": 45,
+    "y": 38.89,
+    "note": "Weapons shop in the western village."
+  },
+  {
+    "id": "m2",
+    "category": "gunstore",
+    "name": "Gun Store, north wharf",
+    "grid": "I6",
+    "x": 85,
+    "y": 61.11,
+    "note": "Weapons shop on the northern wharf."
+  },
+  {
+    "id": "m3",
+    "category": "wlocker",
+    "name": "Weapons Locker, west",
+    "grid": "D3",
+    "x": 35,
+    "y": 27.78,
+    "note": "Locker cluster near the western ridge."
+  },
+  {
+    "id": "m4",
+    "category": "wlocker",
+    "name": "Weapons Locker, east",
+    "grid": "H7",
+    "x": 75,
+    "y": 72.22,
+    "note": "Locker cluster in the eastern district."
+  },
+  {
+    "id": "m5",
+    "category": "bwlocker",
+    "name": "Basic Locker, centre",
+    "grid": "F5",
+    "x": 55,
+    "y": 50,
+    "note": "Basic locker near the middle of the map."
+  },
+  {
+    "id": "m6",
+    "category": "key",
+    "name": "Key spot, south",
+    "grid": "C8",
+    "x": 25,
+    "y": 83.33,
+    "note": "Locked loot area, southern side."
+  },
+  {
+    "id": "m7",
+    "category": "exfil",
+    "name": "Exfil, north",
+    "grid": "F1",
+    "x": 55,
+    "y": 5.56,
+    "note": "Extraction point at the northern edge."
+  },
+  {
+    "id": "m8",
+    "category": "exfil",
+    "name": "Exfil, south",
+    "grid": "G9",
+    "x": 65,
+    "y": 94.44,
+    "note": "Extraction point at the southern edge."
+  },
+  {
+    "id": "m9",
+    "category": "printer",
+    "name": "3D Printer, south west",
+    "grid": "B7",
+    "x": 15,
+    "y": 72.22,
+    "note": "Printer location."
+  },
+  {
+    "id": "m10",
+    "category": "bounty",
+    "name": "Bounty Station, centre",
+    "grid": "E6",
+    "x": 45,
+    "y": 61.11,
+    "note": "Bounty contract terminal."
+  },
+  {
+    "id": "m11",
+    "category": "safe",
+    "name": "Safe, east",
+    "grid": "J4",
+    "x": 95,
+    "y": 38.89,
+    "note": "Safe location."
+  },
+  {
+    "id": "m12",
+    "category": "poi",
+    "name": "Major POI, north east",
+    "grid": "H2",
+    "x": 75,
+    "y": 16.67,
+    "note": "Large point of interest."
+  },
+  {
+    "id": "m13",
+    "category": "fort",
+    "name": "Stronghold, centre east",
+    "grid": "G5",
+    "x": 65,
+    "y": 50,
+    "note": "Fortified area."
+  },
+  {
+    "id": "m14",
+    "category": "lt",
+    "name": "Lieutenant, west",
+    "grid": "B3",
+    "x": 15,
+    "y": 27.78,
+    "note": "Lieutenant patrol area."
+  },
+  {
+    "id": "m15",
+    "category": "uav",
+    "name": "UAV Tower, north west",
+    "grid": "C2",
+    "x": 25,
+    "y": 16.67,
+    "note": "Radar tower."
+  },
+  {
+    "id": "m16",
+    "category": "ammo",
+    "name": "Ammo Cache, south east",
+    "grid": "I8",
+    "x": 85,
+    "y": 83.33,
+    "note": "Ammo crates."
+  },
+  {
+    "id": "m17",
+    "category": "hcache",
+    "name": "Hidden Cache, centre west",
+    "grid": "D6",
+    "x": 35,
+    "y": 61.11,
+    "note": "Concealed stash."
+  }
+]

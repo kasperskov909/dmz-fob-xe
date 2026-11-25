@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2880 2700" width="2880" height="2700"><rect width="2880" height="2700" fill="#10161d"/>
+<line x1="0" y1="0" x2="0" y2="2700" stroke="#3a4856" stroke-width="4"/>
+<line x1="288" y1="0" x2="288" y2="2700" stroke="#3a4856" stroke-width="4"/>
+<line x1="576" y1="0" x2="576" y2="2700" stroke="#3a4856" stroke-width="4"/>
+<line x1="864" y1="0" x2="864" y2="2700" stroke="#3a4856" stroke-width="4"/>
+<line x1="1152" y1="0" x2="1152" y2="2700" stroke="#3a4856" stroke-width="4"/>
+<line x1="1440" y1="0" x2="1440" y2="2700" stroke="#3a4856" stroke-width="4"/>
+<line x1="1728" y1="0" x2="1728" y2="2700" stroke="#3a4856" stroke-width="4"/>
+<line x1="2016" y1="0" x2="2016" y2="2700" stroke="#3a4856" stroke-width="4"/>
+<line x1="2304" y1="0" x2="2304" y2="2700" stroke="#3a4856" stroke-width="4"/>
+<line x1="2592" y1="0" x2="2592" y2="2700" stroke="#3a4856" stroke-width="4"/>
+<line x1="2880" y1="0" x2="2880" y2="2700" stroke="#3a4856" stroke-width="4"/>
+<line x1="0" y1="0" x2="2880" y2="0" stroke="#3a4856" stroke-width="4"/>
+<line x1="0" y1="300" x2="2880" y2="300" stroke="#3a4856" stroke-width="4"/>
+<line x1="0" y1="600" x2="2880" y2="600" stroke="#3a4856" stroke-width="4"/>
+<line x1="0" y1="900" x2="2880" y2="900" stroke="#3a4856" stroke-width="4"/>
+<line x1="0" y1="1200" x2="2880" y2="1200" stroke="#3a4856" stroke-width="4"/>
+<line x1="0" y1="1500" x2="2880" y2="1500" stroke="#3a4856" stroke-width="4"/>
+<line x1="0" y1="1800" x2="2880" y2="1800" stroke="#3a4856" stroke-width="4"/>
+<line x1="0" y1="2100" x2="2880" y2="2100" stroke="#3a4856" stroke-width="4"/>
+<line x1="0" y1="2400" x2="2880" y2="2400" stroke="#3a4856" stroke-width="4"/>
+<line x1="0" y1="2700" x2="2880" y2="2700" stroke="#3a4856" stroke-width="4"/>
+<text x="144" y="80" fill="#8fa3b5" font-family="sans-serif" font-size="64" text-anchor="middle">A</text>
+<text x="432" y="80" fill="#8fa3b5" font-family="sans-serif" font-size="64" text-anchor="middle">B</text>
+<text x="720" y="80" fill="#8fa3b5" font-family="sans-serif" font-size="64" text-anchor="middle">C</text>
+<text x="1008" y="80" fill="#8fa3b5" font-family="sans-serif" font-size="64" text-anchor="middle">D</text>
+<text x="1296" y="80" fill="#8fa3b5" font-family="sans-serif" font-size="64" text-anchor="middle">E</text>
+<text x="1584" y="80" fill="#8fa3b5" font-family="sans-serif" font-size="64" text-anchor="middle">F</text>
+<text x="1872" y="80" fill="#8fa3b5" font-family="sans-serif" font-size="64" text-anchor="middle">G</text>
+<text x="2160" y="80" fill="#8fa3b5" font-family="sans-serif" font-size="64" text-anchor="middle">H</text>
+<text x="2448" y="80" fill="#8fa3b5" font-family="sans-serif" font-size="64" text-anchor="middle">I</text>
+<text x="2736" y="80" fill="#8fa3b5" font-family="sans-serif" font-size="64" text-anchor="middle">J</text>
+<text x="30" y="110" fill="#8fa3b5" font-family="sans-serif" font-size="64">1</text>
+<text x="30" y="410" fill="#8fa3b5" font-family="sans-serif" font-size="64">2</text>
+<text x="30" y="710" fill="#8fa3b5" font-family="sans-serif" font-size="64">3</text>
+<text x="30" y="1010" fill="#8fa3b5" font-family="sans-serif" font-size="64">4</text>
+<text x="30" y="1310" fill="#8fa3b5" font-family="sans-serif" font-size="64">5</text>
+<text x="30" y="1610" fill="#8fa3b5" font-family="sans-serif" font-size="64">6</text>
+<text x="30" y="1910" fill="#8fa3b5" font-family="sans-serif" font-size="64">7</text>
+<text x="30" y="2210" fill="#8fa3b5" font-family="sans-serif" font-size="64">8</text>
+<text x="30" y="2510" fill="#8fa3b5" font-family="sans-serif" font-size="64">9</text>
+</svg>

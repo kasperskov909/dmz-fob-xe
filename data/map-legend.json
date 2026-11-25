@@ -1,0 +1,72 @@
+[
+  {
+    "id": "gunstore",
+    "label": "Gun Store",
+    "colour": "#4AA3FF"
+  },
+  {
+    "id": "wlocker",
+    "label": "Weapons Locker",
+    "colour": "#2E6B3C"
+  },
+  {
+    "id": "bwlocker",
+    "label": "Basic Weapons Locker",
+    "colour": "#C9935E"
+  },
+  {
+    "id": "key",
+    "label": "Key / Locked loot",
+    "colour": "#E8C15A"
+  },
+  {
+    "id": "exfil",
+    "label": "Exfil",
+    "colour": "#39C7E6"
+  },
+  {
+    "id": "printer",
+    "label": "3D Printer",
+    "colour": "#D9DEE4"
+  },
+  {
+    "id": "bounty",
+    "label": "Bounty Station",
+    "colour": "#D6C34A"
+  },
+  {
+    "id": "safe",
+    "label": "Safe",
+    "colour": "#F2B544"
+  },
+  {
+    "id": "poi",
+    "label": "Major POI",
+    "colour": "#FFD000"
+  },
+  {
+    "id": "fort",
+    "label": "Stronghold",
+    "colour": "#FF5A36"
+  },
+  {
+    "id": "lt",
+    "label": "Lieutenant",
+    "colour": "#E0473F"
+  },
+  {
+    "id": "uav",
+    "label": "UAV Tower",
+    "colour": "#3FA9F5"
+  },
+  {
+    "id": "ammo",
+    "label": "Ammo Cache",
+    "colour": "#9AA5B1"
+  },
+  {
+    "id": "hcache",
+    "label": "Hidden Cache",
+    "colour": "#A06A5E"
+  }
+]
